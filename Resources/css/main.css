@@ -117,6 +117,7 @@ nav img {
   justify-content: center;
   align-items: center;
   background-position: center;
+	background-size: cover;
 }
 #cheddar {
   background-image: url("../images/cheddar.jpg");
@@ -133,27 +134,16 @@ nav img {
 #asiago {
   background-image: url("../images/asiago.jpg");
 }
-#gouda {
-  background-image: url("../images/gouda.jpg");
-}
 #brie {
   background-image: url("../images/brie.jpg");
 }
-#swiss {
-  background-image: url("../images/emmentalSwiss.jpg");
-}
-#mozarella {
-  background-image: url("../images/smokedMozarella.jpg");
+#mozzarella {
+  background-image: url("../images/smokedmozzarella.jpg");
 }
 #montereyjack {
   background-image: url("../images/montereyJack.jpg");
 }
-#pepperjack {
-  background-image: url("../images/pepperJack.jpg");
-}
-#pepperjack {
-  background-image: url("../images/pepperJack.jpg");
-}
+
 /* footer section */
 .footer {
   height: auto;
