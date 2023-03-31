@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Resources/css/main.css">
-  <link rel="icon" href="./Resources/images/swissCheeseIcon.png" type="image/icon">
+  <link rel="icon" href="./Resources/icons/swissCheeseIcon.png" type="image/icon">
   <title>CheeseCrave.com | About</title>
 </head>
 
@@ -41,36 +41,50 @@
     </section>
     <section class="profile-card">
       <img src="./Resources/images/profile_steven.png" alt="profile of Steven Salcido">
-      <h1>Steven Salcido</h1>
-      <p>description</p>
-    </section class="profile-card">
+      <article class="card-content">
+        <h1>Steven Salcido</h1>
+        <p>description</p>
+      </article>
+    </section>
     <section class="profile-card">
       <img src="./Resources/images/profile_steven.png" alt="profile of Mary Kohn">
-      <h1>Mary Kohn</h1>
-      <p>description</p>
+      <article class="card-content">
+        <h1>Mary Kohn</h1>
+        <p>description</p>
+      </article>
     </section>
     <section class="profile-card">
-      <img src="./Resources/images/profile_steven.png" alt="profile of Mahin Khandker">
-      <h1>Mahin Khandker</h1>
-      <p>description</p>
+      <img src="./Resources/images/profile_mahin.jpg.jpg" alt="profile of Mahin Khandker">
+      <article class="card-content">
+        <h1>Mahin Khandker</h1>
+        <p>description</p>
+      </article>
     </section>
     <section class="profile-card">
-      <img src="./Resources/images/profile_steven.png" alt="profile of Chyna Davis">
-      <h1>Chyna Davis</h1>
-      <p>description</p>
+      <img src="./Resources/images/profile_chyna.jpg" alt="profile of Chyna Davis">
+      <article class="card-content">
+        <h1>Chyna Davis</h1>
+        <p>description</p>
+      </article>
     </section>
   </main>
-  <footer>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link active" href="about.html">About Us</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="product.html">Products</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="index.html">
-        <img src="Resources/images/cheese-heart.svg">
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="signin.html">Sign In</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="cart.html">Cart</a>
-    </nav>
-  </footer>
+ <footer class="footer">
+		<section class="footer-section" aria-labelledby="email-subscription">
+			<p id="email-subscription">Subscribe for our weekly newsletter</p>
+			<form role="form">
+				<input type="email" placeholder="Email Address" class=" input footer-email-input">
+				<input type="submit" value="Submit" class=" btn button button-primary footer-email-button" />
+			</form>
+		</section>
+		<ul class="footer-section">
+			<li>
+				<img src="Resources/images/cheese-heart.svg" class="logo" alt="Logo" />
+			</li>
+			<li>
+				<p>All Rights Reserved | &copy; <span>2023</span></p>
+			</li>
+		</ul>
+	</footer>
 </body>
 
 </html>

@@ -2,82 +2,137 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Resources/css/main.css">
-  <link rel="icon" href="./Resources/images/swissCheeseIcon.png" type="image/icon">
-  <title>CheeseCrave.com | Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 	bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<!-- 	google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+	<!-- 	css link -->
+	<link rel="stylesheet" href="Resources/css/main.css">
+	<link rel="icon" href="./Resources/icons/swissCheeseIcon.png" type="image/icon">
+	<title>CheeseCrave.com | Home</title>
 </head>
 
 <body>
-  <!--  navigation bar -->
-  <header>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About Us</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="product.html">Products</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="index.html">
-        <img src="Resources/images/cheese-heart.svg">
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="signin.html">Sign In</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="cart.html">Cart</a>
-    </nav>
-  </header>
-  <!--   Jumbotron   -->
-  <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-    </div>
-  </div>
+	<!--  navigation bar -->
+	<header>
+		<nav class="nav nav-pills flex-column flex-sm-row">
+			<a class="flex-sm-fill text-sm-center nav-link" href="about.html">About Us</a>
+			<a class="flex-sm-fill text-sm-center nav-link" href="product.html">Products</a>
+			<a class="flex-sm-fill text-sm-center nav-link" href="index.html">
+				<img src="Resources/images/cheese-heart.svg">
+			</a>
+			<a class="flex-sm-fill text-sm-center nav-link" href="signin.html">Sign In</a>
+			<a class="flex-sm-fill text-sm-center nav-link" href="cart.html">Cart</a>
+		</nav>
+	</header>
+	<!--   Jumbotron   -->
+	<div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
+		<div class="container-fluid py-5">
+		</div>
+	</div>
 
-  <!-- products -->
-  <section class="container mt-4">
-    <h1>CheeseCraze’s Finest Collection!</h1>
-    <div class="row main-products">
-      <!--   product 1   -->
-      <div class="col-sm-6 col-md-3">
-        <div class="rounded-circle mx-auto prod-circles" id="cheddar">
-        </div>
-        <p>Cheddar</p>
-      </div>
-      <!--   product 2   -->
-      <div class="col-sm-6 col-md-3">
-        <div class="rounded-circle mx-auto prod-circles" id="bluecheese">
-        </div>
-        <p>Blue Cheese</p>
-      </div>
-<!--       <div class="row main-products"> -->
-        <!--   product 3   -->
-        <div class="col-sm-6 col-md-3">
-          <div class="rounded-circle mx-auto prod-circles" id="colbyjack">
-          </div>
-          <p>Colby Jack</p>
-        </div>
-        <!--   product  4   -->
-        <div class="col-sm-6 col-md-3">
-          <div class="rounded-circle mx-auto prod-circles" id="pepperjack">
-          </div>
-          <p>Pepper Jack</p>
-        </div>
-<!--       </div> -->
-  </section>
-
-
-  <footer>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About Us</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="product.html">Products</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="index.html">
-        <img src="Resources/images/cheese-heart.svg">
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="signin.html">Sign In</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="cart.html">Cart</a>
-    </nav>
-  </footer>
+	<!-- products -->
+	<section class="container home-page">
+		<h1>CheeseCraze’s Finest Collection!</h1>
+		<div class="row main-products">
+			<!--   cheddar   -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="cheddar">
+				</div>
+				<p>Cheddar</p>
+			</div>
+			<!--   bluecheese   -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="bluecheese">
+				</div>
+				<p>Blue Cheese</p>
+			</div>
+			<!--   colby jack   -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="colbyjack">
+				</div>
+				<p>Colby Jack</p>
+			</div>
+			<!--  pepper jack  -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="pepperjack">
+				</div>
+				<p>Pepper Jack</p>
+			</div>
+			<!-- 		asiago	 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="asiago">
+				</div>
+				<p>Asiago</p>
+			</div>
+			<!-- 		gouda	 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="gouda">
+				</div>
+				<p>Gouda</p>
+			</div>
+			<!-- 		brie	 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="brie">
+				</div>
+				<p>Brie</p>
+			</div>
+			<!-- 		swiss	 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="swiss">
+				</div>
+				<p>Swiss</p>
+			</div>
+			<!-- 		mozarella	 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="mozarella">
+				</div>
+				<p>Smoked Mozarella</p>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="montereyjack">
+				</div>
+				<p>Monterey Jack</p>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="pepperjack">
+				</div>
+				<p>Pepper Jack</p>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="rounded-circle mx-auto prod-circles" id="pepperjack">
+				</div>
+				<p>Pepper Jack</p>
+			</div>
+	</section>
+	<!-- 	footer  -->
+	<footer class="footer">
+		<section class="footer-section" aria-labelledby="email-subscription">
+			<p id="email-subscription">Subscribe for our weekly newsletter</p>
+			<form role="form">
+				<input type="email" placeholder="Email Address" class=" input footer-email-input">
+				<input type="submit" value="Submit" class=" btn button button-primary footer-email-button" />
+			</form>
+		</section>
+		<ul class="footer-section">
+			<li>
+				<img src="Resources/images/cheese-heart.svg" class="logo" alt="Logo" />
+			</li>
+			<li>
+				<p>All Rights Reserved | &copy; <span>2023</span></p>
+			</li>
+		</ul>
+	</footer>
+	<!-- 	javascript CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-0j2Z0jhWOuvl26xZyi/0lD9/oH28KjFmQ2GXrcG96mnszJrZwr/OjwvFR77gOxfp"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
