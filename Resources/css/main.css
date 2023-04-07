@@ -27,7 +27,7 @@ html, body {
   font-family: var(--ff);
   font-weight: var(--fw-500);
   height: 100%;
-  background-color: var(---clr-light-beige);
+  background-color: var(--clr-light-beige);
 /*   background-image: url("./Resources/images/speckle-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -308,7 +308,7 @@ input {
   .products .product-imgs {
     width: 250px;
     height: 250px;
-    border: 3px solid var(--color-burnt-orange);
+    border: 3px solid var(--clr-burnt-orange);
     margin-bottom: 10px;
   }
 
@@ -333,7 +333,7 @@ input {
   }
 
   .products button {
-    background-color: var(--color-burnt-orange);
+    background-color: var(--clr-burnt-orange);
     border: none;
   }
 
