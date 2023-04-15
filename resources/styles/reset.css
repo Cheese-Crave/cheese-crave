@@ -1,0 +1,48 @@
+:root {
+	--text-headers: #8E3200;
+	--text-body: #A64B2A;
+	--background: #D7A86E;
+	--buttons: #FFEBC1;
+	--links: #FFEBC1;
+	--font: 'Karla', sans-serif;
+	--font3: 300;
+	--font5: 500;
+	--font7: 700;
+}
+
+html {
+	font-size: 16px;
+	box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
+	scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
+}
+
+*, *::before, *::after {
+	margin: 0; /* reset to baseline - default browser margin/padding vary */
+	padding: 0; /* reset to baseline - default browser margin/padding vary */
+	box-sizing: inherit; /* ensure box-sizing behavior for all elements */
+}
+
+body {
+	background-color: var(--background);
+	font-family: var(--font);
+	font-weight: var(--font5);
+	color: var(--text-body);
+	height: 100%; /* Set the height of the body element */
+	margin: 0; /* reset to baseline - default browser margin/padding vary */
+	padding: 0; /* reset to baseline - default browser margin/padding vary */
+	line-height: 1.6;
+}
+
+p,
+h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+
+ol, ul {
+	list-style: none; /* no bullet points */
+}
+
+table {
+	border-collapse: collapse; /* merges the borders of adjacent cells into a single border */
+	border-spacing: 0; /* removes any space between the cells */
+}

@@ -1,0 +1,18 @@
+/* this css files is NOT linked to our HTML file */
+/* the purpose of this CSS file is to temporarily hold CSS code */
+/* if you have an idea, you'd like to implement but arent ready, drop it in here! */
+/* if you're deleting something but arent sure, drop it in here! */
+
+:root {
+	/*   Primary Colors */
+	--clr-burgundy: #8E3200;
+	--clr-burnt-orange: #A64B2A;
+	--clr-dark-beige: #D7A86E;
+	--clr-light-beige: #FFEBC1;
+
+	/*   Primary Font */
+	--ff: 'Karla', sans-serif;
+	--fw-300-light: 300;
+	--fw-500: 500;
+	--fw-700-bold: 700;
+}

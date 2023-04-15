@@ -1,56 +1,5 @@
 /*-- Universal Styles --*/
 
-:root {
-	/*   Primary Colors */
-	--clr-burgundy: #8E3200;
-	--clr-burnt-orange: #A64B2A;
-	--clr-dark-beige: #D7A86E;
-	--clr-light-beige: #FFEBC1;
-
-	/*   Primary Font */
-	--ff: 'Karla', sans-serif;
-	--fw-300-light: 300;
-	--fw-500: 500;
-	--fw-700-bold: 700;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-html, body {
-	font-family: var(--ff);
-	font-weight: var(--fw-500);
-	height: 100%;
-	background-color: var(--clr-light-beige);
-	/*   background-image: url("./resources/images/speckle-bg.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center; */
-}
-
-body {
-	line-height: 1.5;
-}
-
-p,
-h1, h2, h3, h4, h5, h6 {
-	overflow-wrap: break-word;
-}
-
-img, picture, video, canvas, svg {
-	/*     display: block; */
-	max-width: 100%;
-}
-
-input, button, textarea, select {
-	font-family: inherit;
-}
 
 /* home page */
 /* navigation */
