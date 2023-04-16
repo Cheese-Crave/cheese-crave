@@ -1,9 +1,11 @@
 :root {
+	--page-background: #000000;
+	--object-background: #657c00;
 	--text-headers: #8E3200;
-	--text-body: #A64B2A;
-	--background: #D7A86E;
-	--buttons: #FFEBC1;
-	--links: #FFEBC1;
+	--text-body: #FFF;
+	--buttons: #7a0a0a;
+	--links: #1215b6;
+	--hover: #dc173f;
 	--font: 'Karla', sans-serif;
 	--font3: 300;
 	--font5: 500;
@@ -23,7 +25,7 @@ html {
 }
 
 body {
-	background-color: var(--background);
+	background-color: var(--page-background);
 	font-family: var(--font);
 	font-weight: var(--font5);
 	color: var(--text-body);
@@ -33,9 +35,34 @@ body {
 	line-height: 1.6;
 }
 
-p,
-h1, h2, h3, h4, h5, h6 {
+p {
 	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+
+}
+
+h1 {
+	color: var(--text-headers);
+	font-size: 5rem;
+	font-weight: var(--font7);
+	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 2rem;
+	color: var(--text-headers);
+	font-weight: var(--font7);
+	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+button {
+	background-color: transparent;
+	border: .1rem solid var(--buttons);
+	color: var(--links);
+	font-size: 1rem;
+	padding: 5px 5px;
+	border-radius: 20px;
+}
+button:hover {
+	color: var(--hover); /* search icon  */
 }
 
 ol, ul {

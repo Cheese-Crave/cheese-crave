@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
 
   <!-- 	Bootstrap CDN -->
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" rel="stylesheet">
+  <!--  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"-->
+  <!--        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" rel="stylesheet">-->
 
   <!-- Javascript, FontAwesome, Bootstrap -->
   <script defer src="js/itemsController.js" type="module"></script>
@@ -24,21 +24,26 @@
   <!--  CSS Modularized -->
   <link href="./resources/styles/reset.css" rel="stylesheet">
   <link href="./resources/styles/main.css" rel="stylesheet">
-  <link href="./resources/styles/products.css" rel="stylesheet">
-  <link href="./resources/styles/icons.css" rel="stylesheet">
+  <!--  <link href="./resources/styles/products.css" rel="stylesheet">-->
+  <!--  <link href="./resources/styles/icons.css" rel="stylesheet">-->
 </head>
 
 <body>
 <header>
-  <nav>
-    <ul>
-      <li>Logo</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Sign In</li>
-      <li>Cart</li>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
     </ul>
+    <section class="nav-buttons">
+      <i class="search fa-solid fa-magnifying-glass fa-lg"></i>
+      <i class="cart fa-solid fa-cart-shopping fa-lg"></i>
+      <button class="sign-in">Sign In</button>
+      <button class="sign-up">Sign Up</button>
+    </section>
   </nav>
+  <h1>Cheese Crave</h1>
 </header>
 
 

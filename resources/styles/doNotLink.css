@@ -1,18 +1,247 @@
-/* this css files is NOT linked to our HTML file */
+/* this css file is NOT linked to our HTML file */
 /* the purpose of this CSS file is to temporarily hold CSS code */
 /* if you have an idea, you'd like to implement but arent ready, drop it in here! */
 /* if you're deleting something but arent sure, drop it in here! */
 
 :root {
-	/*   Primary Colors */
-	--clr-burgundy: #8E3200;
-	--clr-burnt-orange: #A64B2A;
-	--clr-dark-beige: #D7A86E;
-	--clr-light-beige: #FFEBC1;
+	--page-background: #000000;
+	--object-background: #657c00;
+	--text-headers: #8E3200;
+	--text-body: #FFF;
+	--buttons: #7a0a0a;
+	--links: #1215b6;
+	--hover: #dc173f;
+	--font: 'Karla', sans-serif;
+	--font3: 300;
+	--font5: 500;
+	--font7: 700;
+}
 
-	/*   Primary Font */
-	--ff: 'Karla', sans-serif;
-	--fw-300-light: 300;
-	--fw-500: 500;
-	--fw-700-bold: 700;
+
+/* About Page Styles */
+.about-page-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+      "intro"
+      "steven"
+      "steven-content"
+      "mary"
+      "mary-content"
+      "mahin"
+      "mahin-content"
+      "chyna"
+      "chyna-content";
+	margin: 0 1.5em;
+	grid-row-gap: 1em;
+	justify-items: center;
+	align-items: center;
+}
+
+.about-intro {
+	width: 800px;
+	padding: 1em 0;
+	text-align: center;
+	grid-area: intro;
+}
+
+.about-intro h1 {
+	font-size: 42pt;
+	color: var(--clr-burgundy);
+	font-weight: var(--fw-700-bold);
+}
+
+.about-intro p {
+	font-size: 21pt;
+}
+
+.profile-card {
+	width: 450px;
+}
+
+.profile-card h1 {
+	font-size: 30pt;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.profile-card p {
+	font-size: 15pt;
+	text-align: center;
+}
+
+.profile-card img {
+	width: 450px;
+	border-radius: 80%;
+	border: 5px solid var(--clr-burgundy);
+}
+
+.profile-card:nth-child(2) {
+	grid-area: steven;
+}
+
+.profile-card:nth-child(3) {
+	grid-area: mary;
+}
+
+.profile-card:nth-child(4) {
+	grid-area: mahin;
+}
+
+.profile-card:nth-child(5) {
+	grid-area: chyna;
+}
+
+.card-content:nth-child(2) {
+	grid-area: steven-content;
+}
+
+.card-content:nth-child(3) {
+	grid-area: mary-content;
+}
+
+.card-content:nth-child(4) {
+	grid-area: mahin-content;
+}
+
+.card-content:nth-child(5) {
+	grid-area: chyna-content;
+}
+
+/*--Utility Classes--*/
+
+/* Login-page Styles */
+.btn {
+	border-radius: 15%;
+	box-sizing: content-box;
+	padding: 20px 20px;
+	background-color: #FFEBC1;
+	position: relative;
+	width: auto;
+}
+
+.btn:hover {
+	color: #000;
+	background-image: url("../images/cheese-heart.svg");
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+form {
+	justify-content: center;
+	background-color: #D7A86E;
+	padding: 20px;
+}
+
+input {
+	width: 20rem;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: content-box;
+}
+
+.form-checkmark {
+	height: 30px;
+	width: 30px;
+	border-radius: 80%;
+}
+
+.form-label {
+	position: relative;
+	bottom: 10px;
+}
+
+/* product page styles */
+.products .product-imgs {
+	width: 250px;
+	height: 250px;
+	border: 3px solid var(--clr-burnt-orange);
+	margin-bottom: 10px;
+}
+
+.products .add-wish-btns {
+	margin-top: 10px;
+}
+
+.products .product-description {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	align-items: baseline;
+}
+
+.products .col-md p {
+	margin: 0;
+	padding: 0;
+}
+
+.products .col-md {
+	margin-bottom: 50px;
+}
+
+.products button {
+	background-color: var(--clr-burnt-orange);
+	border: none;
+}
+
+
+/*--Media Queries--*/
+
+main:nth
+
+/*Media Queries for About Page*/
+
+@media only screen and (min-width: 500px) {
+	.about-intro {
+		min-width: 400px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.about-page-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+        "intro intro"
+        "steven mary"
+        "steven-content mary-content"
+        "mahin chyna"
+        "mahin-content chyna-content";
+		grid-column-gap: 0.5em;
+		margin: 0 2.5em;
+	}
+}
+
+@media only screen and (min-width: 2050px) {
+	.about-page-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+    "intro intro intro intro"
+    "steven mary mahin chyna"
+    "steven-content mary-content mahin-content chyna-content";
+		margin: 0 2em;
+		grid-column-gap: 0.1em;
+	}
+
+	.about-intro {
+		width: 1800px;
+	}
+
+	.about-intro h1 {
+		font-size: 50pt;
+	}
+
+	.about-intro p {
+		font-size: 30pt;
+		padding-bottom: 1em;
+	}
+
+	.profile-card h1 {
+		font-size: 40pt;
+	}
+
+	.profile-card p {
+		font-size: 20pt;
+	}
 }

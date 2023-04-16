@@ -1,374 +1,81 @@
-/*-- Universal Styles --*/
+/* this style sheet is home to all of our repeating styles */
+/* navigations, headers, footers, and anything that is not unique */
+:root {
+	--page-background: #000000;
+	--object-background: #657c00;
+	--text-headers: #8E3200;
+	--text-body: #FFF;
+	--buttons: #7a0a0a;
+	--links: #1215b6;
+	--hover: #dc173f;
+	--font: 'Karla', sans-serif;
+	--font3: 300;
+	--font5: 500;
+	--font7: 700;
+}
 
-
-/* home page */
 /* navigation */
 nav {
-	height: 70px;
-	width: 100%;
-	position: fixed;
+	background-color: var(--object-background);
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: var(--clr-burgundy);
-}
-
-.nav-link {
-	color: #FFF;
-}
-
-nav .nav-link:hover {
-	color: #000;
-	background-image: url("../images/cheese-heart.svg");
-	background-size: 45px 45px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-nav img {
-	width: 50px;
-	height: 50px;
-}
-
-.active {
-	background: linear-gradient(90deg, rgba(215, 168, 110, 1) 0%, rgba(166, 75, 42, 1) 50%, rgba(215, 168, 110, 1) 100%);
-}
-
-/* main page image */
-.jumbotron {
-	background: url(../images/leilani-angel-q8Hnv_FeQ1s-unsplash.jpg) no-repeat center center;
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	padding-top: 70px;
-}
-
-.jumbotron p {
-	color: #FFF;
-	text-align: center;
-	font-size: 3rem;
-	border-color: #000000;
-}
-
-/* products section */
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-	padding: 30px;
-}
-
-.main-products {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: center;
-}
-
-.prod-circles {
-	width: 300px;
-	height: 300px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-position: center;
-	background-size: cover;
-}
-
-#cheddar {
-	background-image: url("../images/cheddar.jpg");
-}
-
-#bluecheese {
-	background-image: url("../images/blueCheese.jpg");
-}
-
-#colbyjack {
-	background-image: url("../images/colbyJack.jpg");
-}
-
-#pepperjack {
-	background-image: url("../images/pepperJack.jpg");
-}
-
-#asiago {
-	background-image: url("../images/asiago.jpg");
-}
-
-#brie {
-	background-image: url("../images/brie.jpg");
-}
-
-#mozzarella {
-	background-image: url("../images/smokedmozzarella.jpg");
-}
-
-#montereyjack {
-	background-image: url("../images/montereyJack.jpg");
-}
-
-/* footer section */
-.footer {
-	height: auto;
-	padding: 30px 30px 60px;
-	background-color: #8E3200;
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
-}
-
-.footer-section {
-	flex: 1;
-	text-align: center;
-}
-
-form .footer-section {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-}
-
-.footer .logo {
-	width: 100px;
-	margin-top: 20px;
-}
-
-.footer p {
-	margin: 0;
-}
-
-ul {
-	list-style-type: none;
-}
-
-/* About Page Styles */
-.about-page-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-      "intro"
-      "steven"
-      "steven-content"
-      "mary"
-      "mary-content"
-      "mahin"
-      "mahin-content"
-      "chyna"
-      "chyna-content";
-	margin: 0 1.5em;
-	grid-row-gap: 1em;
-	justify-items: center;
-	align-items: center;
-}
-
-.about-intro {
-	width: 800px;
-	padding: 1em 0;
-	text-align: center;
-	grid-area: intro;
-}
-
-.about-intro h1 {
-	font-size: 42pt;
-	color: var(--clr-burgundy);
-	font-weight: var(--fw-700-bold);
-}
-
-.about-intro p {
-	font-size: 21pt;
-}
-
-.profile-card {
-	width: 450px;
-}
-
-.profile-card h1 {
-	font-size: 30pt;
-	text-align: center;
-	padding-top: 1em;
-}
-
-.profile-card p {
-	font-size: 15pt;
-	text-align: center;
-}
-
-.profile-card img {
-	width: 450px;
-	border-radius: 80%;
-	border: 5px solid var(--clr-burgundy);
-}
-
-.profile-card:nth-child(2) {
-	grid-area: steven;
-}
-
-.profile-card:nth-child(3) {
-	grid-area: mary;
-}
-
-.profile-card:nth-child(4) {
-	grid-area: mahin;
-}
-
-.profile-card:nth-child(5) {
-	grid-area: chyna;
-}
-
-.card-content:nth-child(2) {
-	grid-area: steven-content;
-}
-
-.card-content:nth-child(3) {
-	grid-area: mary-content;
-}
-
-.card-content:nth-child(4) {
-	grid-area: mahin-content;
-}
-
-.card-content:nth-child(5) {
-	grid-area: chyna-content;
-}
-
-/*--Utility Classes--*/
-
-/* Login-page Styles */
-.btn {
-	border-radius: 15%;
-	box-sizing: content-box;
-	padding: 20px 20px;
-	background-color: #FFEBC1;
-	position: relative;
-	width: auto;
-}
-
-.btn:hover {
-	color: #000;
-	background-image: url("../images/cheese-heart.svg");
-	background-size: 50px 50px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-form {
-	justify-content: center;
-	background-color: #D7A86E;
-	padding: 20px;
-}
-
-input {
-	width: 20rem;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: content-box;
-}
-
-.form-checkmark {
-	height: 30px;
-	width: 30px;
-	border-radius: 80%;
-}
-
-.form-label {
-	position: relative;
-	bottom: 10px;
-}
-
-/* product page styles */
-.products .product-imgs {
-	width: 250px;
-	height: 250px;
-	border: 3px solid var(--clr-burnt-orange);
-	margin-bottom: 10px;
-}
-
-.products .add-wish-btns {
-	margin-top: 10px;
-}
-
-.products .product-description {
-	display: flex;
-	flex-direction: column;
-	width: 250px;
-	align-items: baseline;
-}
-
-.products .col-md p {
-	margin: 0;
 	padding: 0;
+	margin: 10px;
+	/*padding: 10px;*/
+}
+nav ul {
+	display: flex; /* makes the nav list horizontal */
+	margin: 10px;
+}
+nav li {
+	margin: 5px; /* creates space between nav items */
+}
+nav a {
+	color: var(--links);
+	text-decoration: none; /* removes default underline */
+	font-size: 1.25rem;
+}
+nav a:hover {
+	color: var(--hover);
+}
+.nav-buttons {
+	display: flex; /* login & signup buttons - color set in reset.css */
+	margin: 20px 5px;
+}
+.nav-buttons i {
+	color: var(--links);
+	display: flex;
+	align-items: center;
+	margin: 5px;
+}
+.sign-in, .sign-up {
+	margin: 0 5px; /* buttons on the right side */
 }
 
-.products .col-md {
-	margin-bottom: 50px;
-}
-
-.products button {
-	background-color: var(--clr-burnt-orange);
-	border: none;
-}
 
 
-/*--Media Queries--*/
 
-main:nth
 
-/*Media Queries for About Page*/
 
-@media only screen and (min-width: 500px) {
-	.about-intro {
-		min-width: 400px;
-	}
-}
 
-@media only screen and (min-width: 1100px) {
-	.about-page-container {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-        "intro intro"
-        "steven mary"
-        "steven-content mary-content"
-        "mahin chyna"
-        "mahin-content chyna-content";
-		grid-column-gap: 0.5em;
-		margin: 0 2.5em;
-	}
-}
 
-@media only screen and (min-width: 2050px) {
-	.about-page-container {
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-areas:
-    "intro intro intro intro"
-    "steven mary mahin chyna"
-    "steven-content mary-content mahin-content chyna-content";
-		margin: 0 2em;
-		grid-column-gap: 0.1em;
-	}
 
-	.about-intro {
-		width: 1800px;
-	}
 
-	.about-intro h1 {
-		font-size: 50pt;
-	}
 
-	.about-intro p {
-		font-size: 30pt;
-		padding-bottom: 1em;
-	}
 
-	.profile-card h1 {
-		font-size: 40pt;
-	}
 
-	.profile-card p {
-		font-size: 20pt;
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
