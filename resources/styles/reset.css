@@ -4,7 +4,7 @@
 	--headers: #8E3200;
 	--body: #FFF;
 	--buttons: #7a0a0a;
-	--hover: #8E3200;
+	--hover: #000000;
 	--font-header: 'Rock Salt', sans-serif;
 	--font-body: 'Poppins', sans-serif;
 	--font3: 300;
@@ -19,8 +19,6 @@ html {
 }
 
 *, *::before, *::after {
-	margin: 0; /* reset to baseline - default browser margin/padding vary */
-	padding: 0; /* reset to baseline - default browser margin/padding vary */
 	box-sizing: inherit; /* ensure box-sizing behavior for all elements */
 }
 
@@ -37,7 +35,6 @@ body {
 
 p {
 	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-
 }
 
 h1 {
@@ -50,7 +47,26 @@ h1 {
 	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+	font-family: var(--font-header);
+	color: var(--headers);
+	font-size: 3rem;
+	font-weight: var(--font7);
+	text-align: center;
+	padding: 2rem;
+	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+
+h3 {
+	font-family: var(--font-body);
+	color: var(--headers);
+	font-size: 2rem;
+	font-weight: var(--font5);
+	text-align: center;
+	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+
+h4, h5, h6 {
 	font-size: 2rem;
 	color: var(--headers);
 	font-weight: var(--font7);
@@ -64,8 +80,15 @@ button {
 	padding: 1rem;
 	border-radius: 2rem;
 }
+a.active {
+	background-color: var(--headers);
+	border-radius: 10rem;
+	padding: .5rem;
+}
 button:hover {
 	color: var(--hover);
+	border-radius: 10rem;
+	padding: .5rem;
 }
 
 ol, ul {

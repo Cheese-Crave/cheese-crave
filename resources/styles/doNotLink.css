@@ -9,39 +9,32 @@
 	--headers: #8E3200;
 	--body: #FFF;
 	--buttons: #7a0a0a;
-	--hover: #dc173f;
-	--font: 'Karla', sans-serif;
+	--hover: #000000;
+	--font-header: 'Rock Salt', sans-serif;
+	--font-body: 'Poppins', sans-serif;
 	--font3: 300;
 	--font5: 500;
 	--font7: 700;
 }
 
-/* main */
-main {
-	position: relative;
-	top: 3rem;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-}
-
-.background-image {
-	position: absolute;
-	z-index: -1; /* image appears under content */
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 60rem; /* Adjust this value to control the size of the circle */
-	height: 60rem; /* Make sure this value is the same as the width */
-	border-radius: 50%;
-	background-image: url("../images/Cheese-drip copy.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+<h1>Cheesy Products</h1>
+<div>
+<div>
+<div>
+<img src="./resources/images/asiago.jpg"/>
+<div>
+<p>Asiago</p>
+<p>$12.95</p>
+<p>Say "asi-YUM" and look no further than Asiago! This Italian cheese is the big cheese when it comes to flavor - it's sharp, nutty, and totally grate. Whether you're slicing it up for a cheesy snack or grating it over your favorite pasta dish, Asiago is always a gouda choice. So don't be blue, add some Asiago to your plate today and let the cheesy goodness melt your heart!
+</p>
+</div>
+<div>
+<button >Add to Cart</button>
+<button >Add to Wishlist</button>
+</div>
+</div>
+</div>
+</div>
 
 
 /* About Page Styles */
