@@ -1,12 +1,11 @@
 /* this style sheet is home to all of our repeating styles */
-/* navigations, headers, footers, and anything that is not unique */
+/* navigation, header, footer, and anything that is not unique */
 :root {
 	--page-background: #000000;
 	--object-background: #657c00;
-	--text-headers: #8E3200;
-	--text-body: #FFF;
+	--headers: #8E3200;
+	--body: #FFF;
 	--buttons: #7a0a0a;
-	--links: #1215b6;
 	--hover: #dc173f;
 	--font: 'Karla', sans-serif;
 	--font3: 300;
@@ -17,43 +16,74 @@
 /* navigation */
 nav {
 	background-color: var(--object-background);
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 0;
-	margin: 10px;
-	/*padding: 10px;*/
 }
+
 nav ul {
 	display: flex; /* makes the nav list horizontal */
-	margin: 10px;
 }
+
 nav li {
-	margin: 5px; /* creates space between nav items */
+	margin: 1rem; /* creates space between nav items */
 }
+
 nav a {
-	color: var(--links);
+	color: var(--body);
 	text-decoration: none; /* removes default underline */
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
+
 nav a:hover {
 	color: var(--hover);
 }
-.nav-buttons {
+
+.nav-icons {
 	display: flex; /* login & signup buttons - color set in reset.css */
-	margin: 20px 5px;
 }
-.nav-buttons i {
-	color: var(--links);
+
+.nav-icons i {
+	color: var(--body);
 	display: flex;
 	align-items: center;
-	margin: 5px;
-}
-.sign-in, .sign-up {
-	margin: 0 5px; /* buttons on the right side */
+	margin: 1rem;
 }
 
+.nav-icons i:hover {
+	color: var(--hover);
+}
 
+/* main */
+main {
+	position: relative;
+	top: 3rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*align-content: center;*/
+	align-items: center;
+}
+
+main button {
+	width: auto;
+	background-color: var(--object-background);
+	color: var(--body);
+}
+
+/* footer */
+footer {
+	background-color: var(--object-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+}
 
 
 

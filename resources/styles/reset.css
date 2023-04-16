@@ -1,12 +1,12 @@
 :root {
 	--page-background: #000000;
 	--object-background: #657c00;
-	--text-headers: #8E3200;
-	--text-body: #FFF;
+	--headers: #8E3200;
+	--body: #FFF;
 	--buttons: #7a0a0a;
-	--links: #1215b6;
-	--hover: #dc173f;
-	--font: 'Karla', sans-serif;
+	--hover: #8E3200;
+	--font-header: 'Rock Salt', sans-serif;
+	--font-body: 'Poppins', sans-serif;
 	--font3: 300;
 	--font5: 500;
 	--font7: 700;
@@ -26,9 +26,9 @@ html {
 
 body {
 	background-color: var(--page-background);
-	font-family: var(--font);
+	font-family: var(--font-body);
 	font-weight: var(--font5);
-	color: var(--text-body);
+	color: var(--body);
 	height: 100%; /* Set the height of the body element */
 	margin: 0; /* reset to baseline - default browser margin/padding vary */
 	padding: 0; /* reset to baseline - default browser margin/padding vary */
@@ -41,28 +41,31 @@ p {
 }
 
 h1 {
-	color: var(--text-headers);
+	font-family: var(--font-header);
+	color: var(--headers);
 	font-size: 5rem;
 	font-weight: var(--font7);
+	text-align: center;
+	padding: 2rem;
 	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h2, h3, h4, h5, h6 {
 	font-size: 2rem;
-	color: var(--text-headers);
+	color: var(--headers);
 	font-weight: var(--font7);
 	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 button {
-	background-color: transparent;
-	border: .1rem solid var(--buttons);
-	color: var(--links);
+	background-color: var(--object-background);
+	border: .1rem solid var(--object-background);
+	color: var(--body);
 	font-size: 1rem;
-	padding: 5px 5px;
-	border-radius: 20px;
+	padding: 1rem;
+	border-radius: 2rem;
 }
 button:hover {
-	color: var(--hover); /* search icon  */
+	color: var(--hover);
 }
 
 ol, ul {

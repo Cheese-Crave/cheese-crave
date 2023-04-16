@@ -6,10 +6,9 @@
 :root {
 	--page-background: #000000;
 	--object-background: #657c00;
-	--text-headers: #8E3200;
-	--text-body: #FFF;
+	--headers: #8E3200;
+	--body: #FFF;
 	--buttons: #7a0a0a;
-	--links: #1215b6;
 	--hover: #dc173f;
 	--font: 'Karla', sans-serif;
 	--font3: 300;
