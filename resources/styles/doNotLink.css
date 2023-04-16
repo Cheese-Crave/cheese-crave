@@ -16,6 +16,33 @@
 	--font7: 700;
 }
 
+/* main */
+main {
+	position: relative;
+	top: 3rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.background-image {
+	position: absolute;
+	z-index: -1; /* image appears under content */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60rem; /* Adjust this value to control the size of the circle */
+	height: 60rem; /* Make sure this value is the same as the width */
+	border-radius: 50%;
+	background-image: url("../images/Cheese-drip copy.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 /* About Page Styles */
 .about-page-container {
