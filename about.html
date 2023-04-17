@@ -2,89 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" rel="stylesheet">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="resources/styles/main.css" rel="stylesheet">
-  <link href="resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
-  <title>CheeseCrave.com | About</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
+    <title>CheeseCrave.com | Home</title>
+
+    <!--  Google Fonts (Rock Salt, Poppins) -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
+          rel="stylesheet">
+
+    <!-- Javascript, FontAwesome, Bootstrap -->
+    <script defer src="js/itemsController.js" type="module"></script>
+    <script defer src="js/index.js" type="module"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/8d11417666.js"></script>
+
+    <!--  CSS Modularized -->
+    <link href="./resources/styles/reset.css" rel="stylesheet">
+    <link href="./resources/styles/main.css" rel="stylesheet">
+    <link href="./resources/styles/unique.css" rel="stylesheet">
+    <!--        <link href="./resources/styles/products.css" rel="stylesheet">-->
+    <!--        <link href="./resources/styles/icons.css" rel="stylesheet">-->
 </head>
 
 <body>
 <!--  navigation bar -->
 <header>
-  <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link active" href="about.html">About Us</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="product.html">Products</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="index.html">
-      <img src="resources/images/cheese-heart.svg">
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="signin.html">Sign In</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="cart.html">Cart</a>
-  </nav>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+        </ul>
+        <section class="nav-icons">
+            <i class="search fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="cart.html"><i class="cart fa-solid fa-cart-shopping fa-lg"></i></a>
+            <a href="account.html"><i class="account fa-solid fa-user fa-lg"></i></a>
+        </section>
+    </nav>
 </header>
-<!--   Jumbotron   -->
-<div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
-  <div class="container-fluid py-5"></div>
-</div>
+<!--  end navigation bar -->
 
-<main class="about-page-container">
-  <section class="about-intro">
-    <h1>Team CheeseCraze.com!</h1>
-    <p>On one fortunate day, the memebers of Team CheeseCraze.com came together to make the cheesiest website
-      as part of a final project for the Generation USA Junior Full Stack Java Devloper program.</p>
-  </section>
-  <section class="profile-card">
-    <img alt="profile of Steven Salcido" src="resources/images/profile_steven.png">
-    <article class="card-content">
-      <h1>Steven Salcido</h1>
-      <p>description</p>
-    </article>
-  </section>
-  <section class="profile-card">
-    <img alt="profile of Mary Kohn" src="resources/images/profile_steven.png">
-    <article class="card-content">
-      <h1>Mary Kohn</h1>
-      <p>description</p>
-    </article>
-  </section>
-  <section class="profile-card">
-    <img alt="profile of Mahin Khandker" src="resources/images/profile_mahin.jpg.jpg">
-    <article class="card-content">
-      <h1>Mahin Khandker</h1>
-      <p>description</p>
-    </article>
-  </section>
-  <section class="profile-card">
-    <img alt="profile of Chyna Davis" src="resources/images/profile_chyna.jpg">
-    <article class="card-content">
-      <h1>Chyna Davis</h1>
-      <p>description</p>
-    </article>
-  </section>
-</main>
-<footer class="footer">
-  <section aria-labelledby="email-subscription" class="footer-section">
-    <p id="email-subscription">Subscribe for our weekly newsletter</p>
-    <form role="form">
-      <input class=" input footer-email-input" placeholder="Email Address" type="email">
-      <input class=" btn button button-primary footer-email-button" type="submit" value="Submit"/>
-    </form>
-  </section>
-  <ul class="footer-section">
-    <li>
-      <img alt="Logo" class="logo" src="resources/images/cheese-heart.svg"/>
-    </li>
-    <li>
-      <p>All Rights Reserved | &copy; <span>2023</span></p>
-    </li>
-  </ul>
+<section class="about">
+    <h1>Team CheeseCraze!</h1>
+    <p>On one fortunate day, the members of Team CheeseCrave came together to make the cheesiest website
+        as part of a final project for the Generation USA Junior Full Stack Java Developer program.</p>
+    <div class="team-cards">
+        <section class="team-member">
+            <img alt="profile of Steven Salcido" class="team-member" src="resources/images/profile/profile_steven.png">
+            <article>
+                <h3>Steven Salcido</h3>
+                <p>description</p>
+            </article>
+        </section>
+        <section class="team-member">
+            <img alt="profile of Mary Kohn" class="team-member" src="resources/images/profile/profile_steven.png">
+            <article>
+                <h3>Mary Kohn</h3>
+                <p>description</p>
+            </article>
+        </section>
+        <section class="team-member">
+            <img alt="profile of Mahin Khandker" class="team-member"
+                 src="resources/images/profile/profile_mahin.jpg.jpg">
+            <article>
+                <h3>Mahin Khandker</h3>
+                <p>description</p>
+            </article>
+        </section>
+        <section class="team-member">
+            <img alt="profile of Chyna Davis" class="team-member" src="resources/images/profile/profile_chyna.jpg">
+            <article>
+                <h3>Chyna Davis</h3>
+                <p>description</p>
+            </article>
+        </section>
+    </div>
+</section>
+
+<!-- footer section -->
+<footer>
+    <p>&copy; Cheese Crave 2023. All rights reserved.</p>
 </footer>
+<!-- end footer section -->
 </body>
 
 </html>

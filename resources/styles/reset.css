@@ -1,101 +1,135 @@
 :root {
-	--page-background: #000000;
-	--object-background: #657c00;
-	--headers: #8E3200;
-	--body: #FFF;
-	--buttons: #7a0a0a;
-	--hover: #000000;
-	--font-header: 'Rock Salt', sans-serif;
-	--font-body: 'Poppins', sans-serif;
-	--font3: 300;
-	--font5: 500;
-	--font7: 700;
+    --page-background: #000000;
+    --object-background: #657c00;
+    --headers: #8E3200;
+    --body: #FFF;
+    --buttons: #7a0a0a;
+    --hover: #000000;
+    --font-header: 'Rock Salt', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font3: 300;
+    --font5: 500;
+    --font7: 700;
 }
 
 html {
-	font-size: 16px;
-	box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
-	scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
+    font-size: 16px;
+    box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
+    scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
 }
 
 *, *::before, *::after {
-	box-sizing: inherit; /* ensure box-sizing behavior for all elements */
+    box-sizing: inherit; /* ensure box-sizing behavior for all elements */
 }
 
 body {
-	background-color: var(--page-background);
-	font-family: var(--font-body);
-	font-weight: var(--font5);
-	color: var(--body);
-	height: 100%; /* Set the height of the body element */
-	margin: 0; /* reset to baseline - default browser margin/padding vary */
-	padding: 0; /* reset to baseline - default browser margin/padding vary */
-	line-height: 1.6;
+    background-color: var(--page-background);
+    font-family: var(--font-body);
+    font-weight: var(--font5);
+    color: var(--body);
+    height: 100%; /* Set the height of the body element */
+    margin: 0; /* reset to baseline - default browser margin/padding vary */
+    padding: 0; /* reset to baseline - default browser margin/padding vary */
+    line-height: 1.6;
 }
 
 p {
-	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h1 {
-	font-family: var(--font-header);
-	color: var(--headers);
-	font-size: 5rem;
-	font-weight: var(--font7);
-	text-align: center;
-	padding: 2rem;
-	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+    font-family: var(--font-header);
+    color: var(--headers);
+    font-size: 5rem;
+    font-weight: var(--font7);
+    text-align: center;
+    padding: 2rem;
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h2 {
-	font-family: var(--font-header);
-	color: var(--headers);
-	font-size: 3rem;
-	font-weight: var(--font7);
-	text-align: center;
-	padding: 2rem;
-	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+    font-family: var(--font-header);
+    color: var(--headers);
+    font-size: 3rem;
+    font-weight: var(--font7);
+    text-align: center;
+    padding: 2rem;
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h3 {
-	font-family: var(--font-body);
-	color: var(--headers);
-	font-size: 2rem;
-	font-weight: var(--font5);
-	text-align: center;
-	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+    font-family: var(--font-body);
+    color: var(--headers);
+    font-size: 2rem;
+    font-weight: var(--font5);
+    text-align: center;
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h4, h5, h6 {
-	font-size: 2rem;
-	color: var(--headers);
-	font-weight: var(--font7);
-	overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+    font-size: 2rem;
+    color: var(--headers);
+    font-weight: var(--font7);
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
+
 button {
-	background-color: var(--object-background);
-	border: .1rem solid var(--object-background);
-	color: var(--body);
-	font-size: 1rem;
-	padding: 1rem;
-	border-radius: 2rem;
+    background-color: var(--object-background);
+    border: .1rem solid var(--object-background);
+    color: var(--body);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
 }
+
 a.active {
-	background-color: var(--headers);
-	border-radius: 10rem;
-	padding: .5rem;
+    background-color: var(--headers);
+    border-radius: 10rem;
+    padding: .5rem;
 }
+
 button:hover {
-	color: var(--hover);
-	border-radius: 10rem;
-	padding: .5rem;
+    color: var(--hover);
+    border-radius: 10rem;
+    padding: .5rem;
 }
 
 ol, ul {
-	list-style: none; /* no bullet points */
+    list-style: none; /* no bullet points */
 }
 
+form {
+    max-width: 30rem;
+    flex-basis: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--page-background);
+    border: solid .2rem var(--buttons);
+    border-radius: 2rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--headers);
+    border-radius: 0.5rem;
+}
+
+form button {
+    display: block;
+    width: 100%;
+}
+
+
 table {
-	border-collapse: collapse; /* merges the borders of adjacent cells into a single border */
-	border-spacing: 0; /* removes any space between the cells */
+    border-collapse: collapse; /* merges the borders of adjacent cells into a single border */
+    border-spacing: 0; /* removes any space between the cells */
 }
