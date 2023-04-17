@@ -67,7 +67,7 @@ h3 {
 }
 
 h4, h5, h6 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--headers);
     font-weight: var(--font7);
     overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
@@ -121,6 +121,7 @@ form input {
     font-size: 1rem;
     border: 2px solid var(--headers);
     border-radius: 0.5rem;
+
 }
 
 form button {

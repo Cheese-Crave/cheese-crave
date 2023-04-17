@@ -29,12 +29,7 @@
 
 /* about us styles */
 .about {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));*/
-    /*grid-template-rows: auto;*/
     margin: 0 1.5rem;
-    /*grid-row-gap: 1rem;*/
-    /*grid-column-gap: 1rem;*/
     display: flex;
     flex-direction: column;
 }
@@ -65,9 +60,27 @@
     object-fit: cover;
 }
 
-.account {
+.accounts {
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
     gap: 1rem;
+}
+
+.checkmark {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    margin-bottom: .25rem;
+    /*vertical-align: middle;*/
+
 }
