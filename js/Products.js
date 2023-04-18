@@ -1,8 +1,9 @@
 class Product {
-    constructor(name, price, image, characteristics) {
+    constructor(name, price, image, description, characteristics) {
         this.name = name;
         this.price = price;
         this.image = image;
+        this.description = description;
         this.characteristics = characteristics;
         // add more properties
     }
@@ -14,8 +15,9 @@ function newProduct(name, price, image, characteristics) {
 }
 const cheddar = new Product(
     "cheddar",
-    "./example.jpg",
     "$1.00",
+    "./example.jpg",
+    "words that steven wrote",
     {characteristics: ["hard, example, anotherExample"]});
 
 
