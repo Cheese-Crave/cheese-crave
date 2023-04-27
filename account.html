@@ -24,7 +24,7 @@
     <link href="./resources/styles/main.css" rel="stylesheet">
     <link href="./resources/styles/unique.css" rel="stylesheet">
     <link href="./resources/styles/products.css" rel="stylesheet">
-    <!--  <link href="./resources/styles/icons.css" rel="stylesheet">-->
+    <link href="./resources/styles/icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,50 +34,46 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class="active" href="product.html">Products</a></li>
+            <li><a href="product.html">Products</a></li>
         </ul>
         <section class="nav-icons">
             <i class="search fa-solid fa-magnifying-glass fa-lg"></i>
             <a href="cart.html"><i class="cart fa-solid fa-cart-shopping fa-lg"></i></a>
-            <a href="account.html"><i class="account fa-solid fa-user fa-lg"></i></a>
+            <a class="active" href="account.html"><i class="account fa-solid fa-user fa-lg"></i></a>
         </section>
     </nav>
 </header>
 <!--  end navigation bar -->
 
-<main>
-    <h2 id="products-header">OUR PRODUCTS</h2>
-    <div class="product-grid">
-        <div class="grid-container">
-            <!-- product card-->
-            <article role="article">
-                <h3>Product Name</h3>
-                <p>A short description for this template product card.</p>
-                <div class="product-icons">
-            <span class="tooltip" data-tooltip="Love this product">
-                <i class="fa-regular fa-heart fa-2xl"></i>
-            </span>
-                    <span class="tooltip" data-tooltip="Add to cart">
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </span>
-                    <span class="tooltip" data-tooltip="Add to wishlist">
-                <i class="fa-solid fa-gift fa-2xl"></i>
-            </span>
-                </div>
-                <div class="label">
-                    <span class="feature">Mild</span>
-                    <span class="feature">Sharp</span>
-                    <span class="feature">Creamy</span>
-                    <span class="feature">Crumbly</span>
-                    <span class="feature">Aged</span>
-                    <span class="feature">Tangy</span>
-                    <span class="feature">Pungent</span>
-                </div>
-            </article>
+<!-- account section -->
+<section class="accounts">
+    <form>
+        <h3>Are you new here?</h3>
+        <h4>Get 30% off your order when you create an account!</h4>
+        <label for="email">Email:
+            <input placeholder="myemail@mydomain.com" type="email">
+        </label>
+        <label class="checkmark">
+            <input type="checkbox">
+            Sign up for our newsletter
+        </label>
+        <button type="submit">Sign-up</button>
+    </form>
+    <br>
+    <form>
+        <h3>Already a cheese craver?</h3>
+        <h4>Login here</h4>
+        <label for="email">Email:
+            <input placeholder="myemail@mydomain.com" type="email">
+        </label>
+        <label for="password">Password:
+            <input placeholder="***********************" type="password">
+        </label>
+        <button type="submit">Log-in</button>
+    </form>
+</section>
+<!-- account section -->
 
-        </div>
-    </div>
-</main>
 
 <!-- footer section -->
 <footer>
