@@ -82,14 +82,14 @@ button {
     border-radius: 2rem;
 }
 
-a.active {
-    background-color: var(--headers);
-    border-radius: 10rem;
-    padding: .5rem;
+button:hover {
+    background-color: var(--hover);
+    color: var(--object-background);
+    padding: 1rem;
 }
 
-button:hover {
-    color: var(--hover);
+a.active {
+    background-color: var(--headers);
     border-radius: 10rem;
     padding: .5rem;
 }
