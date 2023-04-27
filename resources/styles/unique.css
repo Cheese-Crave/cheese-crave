@@ -1,28 +1,86 @@
 :root {
-	--page-background: #000000;
-	--object-background: #657c00;
-	--headers: #8E3200;
-	--body: #FFF;
-	--buttons: #7a0a0a;
-	--hover: #000000;
-	--font-header: 'Rock Salt', sans-serif;
-	--font-body: 'Poppins', sans-serif;
-	--font3: 300;
-	--font5: 500;
-	--font7: 700;
+    --page-background: #000000;
+    --object-background: #657c00;
+    --headers: #8E3200;
+    --body: #FFF;
+    --buttons: #7a0a0a;
+    --hover: #000000;
+    --font-header: 'Rock Salt', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font3: 300;
+    --font5: 500;
+    --font7: 700;
 }
 
 /* main page styles */
 .landing-page {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing-page button {
-	width: auto;
-	background-color: var(--object-background);
-	color: var(--body);
+    width: auto;
+    background-color: var(--object-background);
+    color: var(--body);
+}
+
+/* about us styles */
+.about {
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+    grid-template-rows: auto;
+    margin: 0 1.5rem;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+.team-member {
+    width: 30vh;
+    text-align: center;
+    display: grid;
+    border: 5px solid var(--object-background);
+    border-radius: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.team-member img {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+
+.accounts {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.checkmark {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    margin-bottom: .25rem;
+    /*vertical-align: middle;*/
+
 }

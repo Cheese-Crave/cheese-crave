@@ -5,7 +5,7 @@
 
 :root {
 	--page-background: #000000;
-	--object-background: #657c00;
+	--object-background: #000000;
 	--headers: #8E3200;
 	--body: #FFF;
 	--buttons: #7a0a0a;
@@ -37,96 +37,6 @@
 </div>
 
 
-/* About Page Styles */
-.about-page-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-      "intro"
-      "steven"
-      "steven-content"
-      "mary"
-      "mary-content"
-      "mahin"
-      "mahin-content"
-      "chyna"
-      "chyna-content";
-	margin: 0 1.5em;
-	grid-row-gap: 1em;
-	justify-items: center;
-	align-items: center;
-}
-
-.about-intro {
-	width: 800px;
-	padding: 1em 0;
-	text-align: center;
-	grid-area: intro;
-}
-
-.about-intro h1 {
-	font-size: 42pt;
-	color: var(--clr-burgundy);
-	font-weight: var(--fw-700-bold);
-}
-
-.about-intro p {
-	font-size: 21pt;
-}
-
-.profile-card {
-	width: 450px;
-}
-
-.profile-card h1 {
-	font-size: 30pt;
-	text-align: center;
-	padding-top: 1em;
-}
-
-.profile-card p {
-	font-size: 15pt;
-	text-align: center;
-}
-
-.profile-card img {
-	width: 450px;
-	border-radius: 80%;
-	border: 5px solid var(--clr-burgundy);
-}
-
-.profile-card:nth-child(2) {
-	grid-area: steven;
-}
-
-.profile-card:nth-child(3) {
-	grid-area: mary;
-}
-
-.profile-card:nth-child(4) {
-	grid-area: mahin;
-}
-
-.profile-card:nth-child(5) {
-	grid-area: chyna;
-}
-
-.card-content:nth-child(2) {
-	grid-area: steven-content;
-}
-
-.card-content:nth-child(3) {
-	grid-area: mary-content;
-}
-
-.card-content:nth-child(4) {
-	grid-area: mahin-content;
-}
-
-.card-content:nth-child(5) {
-	grid-area: chyna-content;
-}
 
 /*--Utility Classes--*/
 
@@ -142,7 +52,6 @@
 
 .btn:hover {
 	color: #000;
-	background-image: url("../images/cheese-heart.svg");
 	background-size: 50px 50px;
 	background-repeat: no-repeat;
 	background-position: center;
