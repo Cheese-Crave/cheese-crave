@@ -12,17 +12,10 @@
     --font7: 700;
 }
 
-html {
+html body {
     font-size: 16px;
     box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
     scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
-}
-
-*, *::before, *::after {
-    box-sizing: inherit; /* ensure box-sizing behavior for all elements */
-}
-
-body {
     background-color: var(--page-background);
     font-family: var(--font-body);
     font-weight: var(--font5);
@@ -31,6 +24,10 @@ body {
     margin: 0; /* reset to baseline - default browser margin/padding vary */
     padding: 0; /* reset to baseline - default browser margin/padding vary */
     line-height: 1.6;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* ensure box-sizing behavior for all elements */
 }
 
 p {

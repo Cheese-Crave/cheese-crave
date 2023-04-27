@@ -60,6 +60,7 @@
     object-fit: cover;
 }
 
+/* account section (forms) */
 .accounts {
     min-height: 100vh;
     display: flex;
