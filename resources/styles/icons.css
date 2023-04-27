@@ -1,10 +1,33 @@
 /* this stylesheet is for styling icons */
 
+.nav-icons { /* container holds all icons */
+    display: flex; /* login & signup icons - color set in reset.css */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-icon { /* individual icon */
+    padding: .5rem;
+
+}
+
+.nav-icon i {
+    color: var(--body);
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.nav-icon i:hover {
+    color: var(--hover);
+}
+
+/* product page icons */
 .product-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: .75rem;
 }
 
 .tooltip {
@@ -44,20 +67,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem; /* creates a gap between rows */
-    /*padding: 1rem 1rem;*/
-    /*justify-content: flex-start;*/
 }
 
 .label span {
     border-radius: 5rem;
     background-color: var(--card-background);
     font-size: 1rem;
-    /*height: 2rem;*/
-    /*padding: 0.5rem;*/
-    /*min-width: 2rem;*/
-    /*display: inline-block;*/
-    /*margin-right: 0.5rem;*/
-    /*margin-bottom: 0.5rem;*/
-    /*line-height: 1rem; !* vertically center the text *!*/
-    /*text-align: center; !* horizontally center the text *!*/
 }

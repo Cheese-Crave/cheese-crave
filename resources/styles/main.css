@@ -30,20 +30,6 @@ nav a:hover {
     color: var(--hover);
 }
 
-.nav-icons {
-    display: flex; /* login & signup buttons - color set in reset.css */
-}
-
-.nav-icons i {
-    color: var(--body);
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-}
-
-.nav-icons i:hover {
-    color: var(--hover);
-}
 
 /* footer */
 footer {
