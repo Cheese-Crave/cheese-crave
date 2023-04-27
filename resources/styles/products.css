@@ -1,45 +1,46 @@
 :root {
-	--page-background: #000000;
-	--object-background: #657c00;
-	--headers: #8E3200;
-	--body: #FFF;
-	--buttons: #7a0a0a;
-	--hover: #000000;
-	--font-header: 'Rock Salt', sans-serif;
-	--font-body: 'Poppins', sans-serif;
-	--font3: 300;
-	--font5: 500;
-	--font7: 700;
+    --page-background: #000000;
+    --card-background: #657c00;
+    --headers: #8E3200;
+    --body: #FFF;
+    --buttons: #7a0a0a;
+    --hover: #000000;
+    --font-header: 'Rock Salt', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font3: 300;
+    --font5: 500;
+    --font7: 700;
 }
 
 main {
-	padding: 3rem;
+    padding: 3rem;
 }
 
 .product-grid {
-	display: flex;
-	justify-content: center;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 2rem 2rem;
-	max-width: 800px; /* maximum width of the grid */
-	width: 100%;
-	justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem 2rem;
+    max-width: 800px; /* maximum width of the grid */
+    width: 100%;
+    justify-content: center;
 }
 
 article {
-	border: .25rem solid var(--body);
-	border-radius: 25px;
-	max-height: 400px; /* maximum height of the card */
-	margin: 1rem;
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
+    border: .25rem solid var(--body);
+    border-radius: 25px;
+    max-height: 400px; /* maximum height of the card */
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
+
 article p {
-	align-items: flex-end;
+    align-items: flex-end;
 }

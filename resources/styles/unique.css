@@ -1,16 +1,4 @@
-:root {
-    --page-background: #000000;
-    --object-background: #657c00;
-    --headers: #8E3200;
-    --body: #FFF;
-    --buttons: #7a0a0a;
-    --hover: #000000;
-    --font-header: 'Rock Salt', sans-serif;
-    --font-body: 'Poppins', sans-serif;
-    --font3: 300;
-    --font5: 500;
-    --font7: 700;
-}
+/* styles that will not repeat should go in here */
 
 /* main page styles */
 .landing-page {
@@ -23,7 +11,7 @@
 
 .landing-page button {
     width: auto;
-    background-color: var(--object-background);
+    background-color: var(--card-background);
     color: var(--body);
 }
 
@@ -47,7 +35,7 @@
     width: 30vh;
     text-align: center;
     display: grid;
-    border: 5px solid var(--object-background);
+    border: 5px solid var(--card-background);
     border-radius: 2rem;
     justify-items: center;
     align-items: center;

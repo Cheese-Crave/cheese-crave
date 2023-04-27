@@ -1,75 +1,63 @@
-:root {
-	--page-background: #000000;
-	--object-background: #657c00;
-	--headers: #8E3200;
-	--body: #FFF;
-	--buttons: #7a0a0a;
-	--hover: #000000;
-	--font-header: 'Rock Salt', sans-serif;
-	--font-body: 'Poppins', sans-serif;
-	--font3: 300;
-	--font5: 500;
-	--font7: 700;
-}
+/* this stylesheet is for styling icons */
 
 .product-icons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
 }
 
 .tooltip {
-	position: relative;
-	cursor: pointer;
-	display: inline-block;
-	align-items: center;
-	padding: 2rem;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    padding: 2rem;
 }
 
 .tooltip::after {
-	content: attr(data-tooltip);
-	font-size: .75rem;
-	white-space: nowrap;
-	position: absolute;
-	bottom: 100%; /* tooltip above the element */
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: var(--page-background);
-	color: var(--body);
-	padding: 5px 10px;
-	border-radius: 5px;
-	opacity: 0;
-	transition: opacity 0.3s;
+    content: attr(data-tooltip);
+    font-size: .75rem;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 100%; /* tooltip above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--page-background);
+    color: var(--body);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip:hover::after {
-	opacity: 1;
+    opacity: 1;
 }
 
 .tooltip i {
-	padding: .5rem;
-	color: var(--body);
+    padding: .5rem;
+    color: var(--body);
 }
 
 .label {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem; /* creates a gap between rows */
-	/*padding: 1rem 1rem;*/
-	/*justify-content: flex-start;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* creates a gap between rows */
+    /*padding: 1rem 1rem;*/
+    /*justify-content: flex-start;*/
 }
 
 .label span {
-	border-radius: 5rem;
-	background-color: var(--object-background);
-	font-size: 1rem;
-	/*height: 2rem;*/
-	/*padding: 0.5rem;*/
-	/*min-width: 2rem;*/
-	/*display: inline-block;*/
-	/*margin-right: 0.5rem;*/
-	/*margin-bottom: 0.5rem;*/
-	/*line-height: 1rem; !* vertically center the text *!*/
-	/*text-align: center; !* horizontally center the text *!*/
+    border-radius: 5rem;
+    background-color: var(--card-background);
+    font-size: 1rem;
+    /*height: 2rem;*/
+    /*padding: 0.5rem;*/
+    /*min-width: 2rem;*/
+    /*display: inline-block;*/
+    /*margin-right: 0.5rem;*/
+    /*margin-bottom: 0.5rem;*/
+    /*line-height: 1rem; !* vertically center the text *!*/
+    /*text-align: center; !* horizontally center the text *!*/
 }

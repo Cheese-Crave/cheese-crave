@@ -1,6 +1,7 @@
 :root {
     --page-background: #000000;
-    --object-background: #657c00;
+    --card-background: #657c00;
+    --form-background: #;
     --headers: #8E3200;
     --body: #FFF;
     --buttons: #7a0a0a;
@@ -20,7 +21,7 @@ html body {
     font-family: var(--font-body);
     font-weight: var(--font5);
     color: var(--body);
-    height: 100%; /* Set the height of the body element */
+    height: 100vh; /* Set the height of the body element */
     margin: 0; /* reset to baseline - default browser margin/padding vary */
     padding: 0; /* reset to baseline - default browser margin/padding vary */
     line-height: 1.6;
@@ -28,10 +29,6 @@ html body {
 
 *, *::before, *::after {
     box-sizing: inherit; /* ensure box-sizing behavior for all elements */
-}
-
-p {
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
 h1 {
@@ -54,25 +51,33 @@ h2 {
     overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
-h3 {
+h3 { /* form header */
     font-family: var(--font-body);
     color: var(--headers);
     font-size: 2rem;
     font-weight: var(--font5);
     text-align: center;
+    border: solid .2rem var(--buttons);
     overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
-h4, h5, h6 {
+h4, h5, h6 { /* form body */
+    font-family: var(--font-body);
+    color: var(--body);
     font-size: 1rem;
-    color: var(--headers);
     font-weight: var(--font7);
     overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
 }
 
+p {
+    font-family: var(--font-body);
+    color: var(--body);
+    font-size: 1rem;
+    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
+}
+
 button {
-    background-color: var(--object-background);
-    border: .1rem solid var(--object-background);
+    background-color: var(--buttons);
     color: var(--body);
     font-size: 1rem;
     padding: 1rem;
@@ -81,7 +86,7 @@ button {
 
 button:hover {
     background-color: var(--hover);
-    color: var(--object-background);
+    color: var(--body);
     padding: 1rem;
 }
 
@@ -96,19 +101,21 @@ ol, ul {
 }
 
 form {
-    max-width: 30rem;
-    flex-basis: 30rem;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: var(--page-background);
+    background-color: var(--card-background);
     border: solid .2rem var(--buttons);
     border-radius: 2rem;
+    height: 32rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 form label {
     display: block;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    border: solid .2rem var(--buttons);
 }
 
 form input {
@@ -118,16 +125,16 @@ form input {
     font-size: 1rem;
     border: 2px solid var(--headers);
     border-radius: 0.5rem;
-
 }
 
 form button {
     display: block;
     width: 100%;
+    border: solid .2rem var(--buttons);
 }
-
 
 table {
     border-collapse: collapse; /* merges the borders of adjacent cells into a single border */
     border-spacing: 0; /* removes any space between the cells */
+
 }
