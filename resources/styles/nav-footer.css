@@ -1,0 +1,27 @@
+/* navigation */
+nav {
+    background-color: var(--nav-background);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex; /* makes the nav list horizontal */
+    list-style: none; /* no bullet points */
+    padding: 1rem 1rem;
+}
+
+nav li a { /* nav links */
+    color: var(--body);
+    text-decoration: none; /* removes default underline */
+    padding: .5rem 1rem;
+}
+
+nav li a:hover { /* nav links */
+    background-color: var(--border);
+    border: .1rem solid var(--hover);
+    border-radius: 5rem;
+}

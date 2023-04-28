@@ -1,0 +1,68 @@
+/* this stylesheet is for styling icons */
+/* main page buttons */
+button {
+    background-color: var(--button);
+    color: var(--body);
+    border: .2rem solid var(--border);
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: var(--body);
+    color: var(--button);
+    border: .2rem solid var(--hover);
+}
+
+/* product page icons */
+.product-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    font-size: .75rem;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 100%; /* tooltip above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--page-background);
+    color: var(--body);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+.tooltip i {
+    padding: .5rem;
+    color: var(--body);
+}
+
+.label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* creates a gap between rows */
+}
+
+.label span {
+    border-radius: 5rem;
+    background-color: var(--card-background);
+    font-size: 1rem;
+}

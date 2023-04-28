@@ -1,0 +1,32 @@
+/* about us cards */
+
+.card-container {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card {
+    width: 12.5rem;
+    height: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: .25rem solid var(--border);
+    border-radius: 2rem;
+    margin: .25rem;
+}
+
+.card img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+
+/* product cards */
