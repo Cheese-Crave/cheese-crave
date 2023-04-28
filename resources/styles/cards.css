@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+.team-flip {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.team-flip:hover {
+    transform: rotateY(180deg);
+}
 
 .card {
     width: 12.5rem;
