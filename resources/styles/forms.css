@@ -1,7 +1,6 @@
 /* account section (forms) */
 .flip-container {
     height: 100vh;
-    border: .1rem solid white;
     display: flex;
     justify-content: center;
     align-items: center;
