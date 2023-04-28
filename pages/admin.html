@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
+    <title>CheeseCrave.com | Administration</title>
+
+    <!--  Google Fonts (Rock Salt, Poppins) -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
+          rel="stylesheet">
+
+    <!--  Javascript  -->
+    <script src="../js/productCard.js" defer type="module"></script>
+    <script src="../js/Products.js" defer type="module"></script>
+
+    <!--  CSS Modularized -->
+    <link href="../resources/styles/reset.css" rel="stylesheet">
+    <link href="../resources/styles/nav-footer.css" rel="stylesheet">
+    <link href="../resources/styles/main.css" rel="stylesheet">
+    <link href="../resources/styles/text.css" rel="stylesheet">
+    <link href="../resources/styles/buttons-icons.css" rel="stylesheet">
+    <link href="../resources/styles/forms.css" rel="stylesheet">
+    <link href="../resources/styles/cards.css" rel="stylesheet">
+</head>
+
+<body>
+<!--  navigation bar -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="./about.html">About</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
+            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+            <li><a href="./account.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
+        </ul>
+    </nav>
+</header>
+<!-- add product form -->
+<section class="header">
+    <h1>Add Product</h1>
+    <p>Fill out the form below to add a product.</p>
+</section>
+<form id="product-form">
+    <label for="name">Product Name:</label>
+    <input id="name" name="name" required type="text">
+    <br>
+    <label for="price">Product Price:</label>
+    <input id="price" name="price" required type="number">
+    <br>
+    <label for="image">Product Image (SRC):</label>
+    <input id="image" name="image" required type="text">
+    <br>
+    <label for="description">Product Description:</label>
+    <input id="description" name="description" required type="text">
+    <br>
+    <label for="labels">Product Labels:</label>
+    <input id="labels" name="labels" required type="text">
+    <br>
+    <button type="submit">Submit</button>
+    <br>
+</form>
+
+</body>
+
+</html>
