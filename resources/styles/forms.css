@@ -1,13 +1,42 @@
+/* account section (forms) */
+.flip-container {
+    height: 100vh;
+    border: .1rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accounts {
+    width: 30rem;
+    height: 30rem;
+}
+
+.flip {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    z-index: 2;
+}
+
 form {
     background-color: var(--form-background);
     color: var(--body);
     border: solid .2rem var(--border);
     border-radius: 2rem;
-    height: 32rem; /* both forms, same height */
-    padding: 1rem; /* padding around the inside of the form */
+    height: auto;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* equal spacing around form elements */
+    justify-content: space-around;
+}
+
+form p {
+    text-align: center;
 }
 
 form label {
@@ -24,47 +53,6 @@ form input {
     border-radius: 2rem;
 }
 
-/* account section (forms) */
-.flip-container {
-    perspective: 1000px;
-}
-
-.accounts {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 0 auto;
-}
-
-.flip {
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.front, .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.flip.flipped {
-    transform: rotateY(180deg);
-}
-
 .checkmark {
     display: inline-flex;
     align-items: center;
@@ -77,3 +65,21 @@ input[type="checkbox"] {
     margin-right: 1rem;
     margin-bottom: .25rem;
 }
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flip.flipped {
+    transform: rotateY(180deg);
+}
+

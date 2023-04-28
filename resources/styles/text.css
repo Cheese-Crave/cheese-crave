@@ -9,11 +9,11 @@ h1, h2, h3 {
 
 h2 {
     font-size: 3rem;
-    padding: 2rem;
 }
 
 h3 { /* form header */
     font-size: 2rem;
+    padding: 1rem;
 }
 
 h4, h5, h6 {
@@ -25,4 +25,5 @@ p { /* form body */
     font-weight: var(--font5);
     color: var(--body);
     font-size: 1rem;
+    padding: 0;
 }
