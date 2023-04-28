@@ -17,7 +17,6 @@ if (products.length === 0) {
         const {name, price, image, description, labels} = productData;
         // create new instance of Product class
         const product = new Product(name, price, image, description, labels);
-        console.log('Product data: ', productData);
         // create product cards for each product
         const productCard = product.createCard();
         // adding to product.html

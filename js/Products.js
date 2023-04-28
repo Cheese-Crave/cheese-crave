@@ -8,7 +8,6 @@ export class Product {
     }
 
     createCard() {
-        console.log('Creating card for: ', this);
         // empty container used for styling
         const section = document.createElement("section");
         section.className = 'card';
@@ -26,7 +25,6 @@ export class Product {
         // product image
         const productImage = document.createElement("img");
         productImage.src = this.image;
-        console.log('Image src: ', productImage.src);
         section.appendChild(productImage);
 
         // product description
