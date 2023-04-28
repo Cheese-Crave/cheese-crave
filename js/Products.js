@@ -1,4 +1,3 @@
-
 export class Product {
     constructor(name, price, image, description, labels) {
         this.name = name;
@@ -37,7 +36,13 @@ export class Product {
         // add to cart button
         const addToCart = document.createElement('i');
         addToCart.className = "fa-solid fa-cart-shopping fa-2xl";
+            // when clicked, the addToCart method is called
+        addToCart.addEventListener('click', () => {
+            this.addToCart();
+        });
         productIconContainer.appendChild(addToCart);
+        }
+
         // add to wishlist button
         const addToWishlist = document.createElement('i');
         addToWishlist.className = "fa-solid fa-gift fa-2xl";
@@ -83,5 +88,9 @@ export class Product {
         section.appendChild(labelsContainer);
 
         return section;
+    }
+    addToCart() {
+
+
     }
 }
