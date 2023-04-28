@@ -1,3 +1,4 @@
+
 export class Product {
     constructor(name, price, image, description, labels) {
         this.name = name;
@@ -5,7 +6,6 @@ export class Product {
         this.image = image;
         this.description = description;
         this.labels = labels;
-    }
 
     createCard() {
         // empty container used for styling
