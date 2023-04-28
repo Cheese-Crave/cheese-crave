@@ -34,3 +34,14 @@
 }
 
 /* product cards */
+#product-container {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside {
+    border: .1rem solid white;
+}

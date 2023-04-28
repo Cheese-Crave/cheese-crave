@@ -10,29 +10,44 @@ export class Product {
     createCard() {
         // empty container used for styling
         const section = document.createElement("section");
+        section.className = 'card';
 
         // product name
         const productName = document.createElement("h3");
         productName.textContent = this.name;
         section.appendChild(productName);
 
+        // product price
+        const productPrice = document.createElement("p");
+        productPrice.textContent = this.price;
+        section.appendChild(productPrice);
+
+        // product image
+        const productImage = document.createElement("img");
+        productImage.src = this.image;
+        section.appendChild(productImage);
+
         // product description
         const productDescription = document.createElement("p");
         productDescription.textContent = this.description;
         section.appendChild(productDescription);
 
-        const productPrice = document.createElement("p");
-        productPrice.textContent = this.price;
-        section.appendChild(productPrice);
-
         // product buttons/icons
-        const productIconContainer = document.createElement("div");
+        const productIconContainer = document.createElement("aside");
+        // add to cart button
         const addToCart = document.createElement('i');
-        addToCard.className = "fa-solid fa-cart-shopping fa-2xl";
-        const addToWishList =
-            addToWishlist.className = "";
-        const ratings =
-            ratings.className = "";
+        addToCart.className = "fa-solid fa-cart-shopping fa-2xl";
+        productIconContainer.appendChild(addToCart);
+        // add to wishlist button
+        const addToWishlist = document.createElement('i');
+        addToWishlist.className = "fa-solid fa-gift fa-2xl";
+        productIconContainer.appendChild(addToWishlist);
+        // rate/see ratings buttons
+        const ratings = document.createElement('i');
+        ratings.className = "fa-solid fa-star fa-2xl";
+        productIconContainer.appendChild(ratings);
+
+        section.appendChild(productIconContainer);
 
         // product characteristics via labels
         const labelsContainer = document.createElement("section");
