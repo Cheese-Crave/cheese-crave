@@ -1,12 +1,17 @@
 /* about us cards */
+
+.about-page {
+    margin-top: 8em;
+}
+
 .card-container {
     max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 3rem;
 }
-
 
 .card {
     width: 12.5rem;
