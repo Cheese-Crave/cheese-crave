@@ -1,11 +1,11 @@
-import {Product} from "./Products";
+import {Product} from "./Products.js";
 
 const form = document.getElementById('product-form');
 const productContainer = document.getElementById('product-container')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    alert('success');
+    alert('Product Added');
 
     const name = form.name.value;
     const price = form.price.value;
@@ -13,14 +13,10 @@ form.addEventListener('submit', (event) => {
     const description = form.description.value;
     const labels = form.labels.value.split(',').map((label) => label.trim());
 
-    // new instance of our product - create new product
-    const newProduct = new Product(name, price, image, description, labels);
-    const productCard = newProduct.createCard();
-
-    productContainer.appendChild(productCard);
+    // retrieves the items in local storage or create empty array
+    const products = JSON.parse(localStorage.getItem('products')) || [];
+    // new object with product data
+    products.push({name, price, image, description, labels});
+    // save the updated array to local storage
+    localStorage.setItem('products', JSON.stringify(products));
 })
-
-
-const newProduct = product.createCard();
-document.querySelector(".grid-container").appendChild(newProduct);
-
