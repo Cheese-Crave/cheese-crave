@@ -1,11 +1,13 @@
 :root {
-    --page-background: #000000;
-    --card-background: #657c00;
-    --form-background: #;
-    --headers: #8E3200;
-    --body: #FFF;
-    --buttons: #7a0a0a;
-    --hover: #000000;
+    --page-background: #111111;
+    --nav-background: #820000;
+    --card-background: #820000;
+    --form-background: #4E6C50;
+    --header: #F2DEBA;
+    --body: #FAECD6;
+    --button: #111111;
+    --border: #820000;
+    --hover: #4E6C50;
     --font-header: 'Rock Salt', sans-serif;
     --font-body: 'Poppins', sans-serif;
     --font3: 300;
@@ -14,125 +16,17 @@
 }
 
 html body {
-    font-size: 16px;
-    box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
-    scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
     background-color: var(--page-background);
     font-family: var(--font-body);
     font-weight: var(--font5);
     color: var(--body);
-    height: 100vh; /* Set the height of the body element */
-    margin: 0; /* reset to baseline - default browser margin/padding vary */
-    padding: 0; /* reset to baseline - default browser margin/padding vary */
-    line-height: 1.6;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
+    scroll-behavior: smooth;
+    min-height: 100vh; /* Set the height of the body element */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit; /* ensure box-sizing behavior for all elements */
-}
-
-h1 {
-    font-family: var(--font-header);
-    color: var(--headers);
-    font-size: 5rem;
-    font-weight: var(--font7);
-    text-align: center;
-    padding: 2rem;
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-}
-
-h2 {
-    font-family: var(--font-header);
-    color: var(--headers);
-    font-size: 3rem;
-    font-weight: var(--font7);
-    text-align: center;
-    padding: 2rem;
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-}
-
-h3 { /* form header */
-    font-family: var(--font-body);
-    color: var(--headers);
-    font-size: 2rem;
-    font-weight: var(--font5);
-    text-align: center;
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-}
-
-h4, h5, h6 { /* form body */
-    font-family: var(--font-body);
-    color: var(--body);
-    font-size: 1rem;
-    font-weight: var(--font7);
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-}
-
-p {
-    font-family: var(--font-body);
-    color: var(--body);
-    font-size: 1rem;
-    overflow-wrap: break-word; /* allows the text to be broken and wrapped within the container */
-}
-
-button {
-    background-color: var(--buttons);
-    color: var(--body);
-    font-size: 1rem;
-    padding: 1rem;
-    border-radius: 2rem;
-}
-
-button:hover {
-    background-color: var(--hover);
-    color: var(--body);
-    padding: 1rem;
-}
-
-a.active {
-    background-color: var(--headers);
-    border-radius: 10rem;
-    padding: .5rem;
-}
-
-ol, ul {
-    list-style: none; /* no bullet points */
-}
-
-form {
-    background-color: var(--card-background);
-    border: solid .2rem var(--buttons);
-    border-radius: 2rem;
-    height: 32rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-form label {
-    display: block;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-form input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    border: 2px solid var(--headers);
-    border-radius: 0.5rem;
-}
-
-form button {
-    display: block;
-    width: 100%;
-    border: solid .2rem var(--buttons);
-}
-
-table {
-    border-collapse: collapse; /* merges the borders of adjacent cells into a single border */
-    border-spacing: 0; /* removes any space between the cells */
-
-}

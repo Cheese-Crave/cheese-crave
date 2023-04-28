@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -13,61 +13,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
           rel="stylesheet">
 
-    <!-- FontAwesome -->
+    <!-- Javascript FontAwesome -->
+    <script defer src="../js/formFlip.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8d11417666.js"></script>
 
     <!--  CSS Modularized -->
     <link href="../resources/styles/reset.css" rel="stylesheet">
+    <link href="../resources/styles/nav-footer.css" rel="stylesheet">
     <link href="../resources/styles/main.css" rel="stylesheet">
-    <link href="../resources/styles/unique.css" rel="stylesheet">
-    <link href="../resources/styles/icons.css" rel="stylesheet">
+    <link href="../resources/styles/text.css" rel="stylesheet">
+    <link href="../resources/styles/buttons-icons.css" rel="stylesheet">
+    <link href="../resources/styles/forms.css" rel="stylesheet">
+    <link href="../resources/styles/cards.css" rel="stylesheet">
 </head>
 
 <body>
 <!--  navigation bar -->
 <header>
-    <nav class="navbar">
-        <ul class="nav-links">
+    <nav>
+        <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="product.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
+            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+            <li><a class="active" href="./account.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
         </ul>
-        <section class="nav-icons">
-            <i class="nav-icon fa-solid fa-magnifying-glass fa-lg"></i>
-            <a href="cart.html"><i class="nav-icon fa-solid fa-cart-shopping fa-lg"></i></a>
-            <a class="active" href="account.html"><i class="nav-icon fa-solid fa-user fa-lg"></i></a>
-        </section>
     </nav>
 </header>
 <!--  end navigation bar -->
 
 <!-- account section -->
-<section class="accounts">
-    <form>
-        <h3>Are you new here?</h3>
-        <h4>Get 30% off your order when you create an account!</h4>
-        <label for="email">Email:
-            <input placeholder="myemail@mydomain.com" type="email">
-        </label>
-        <label class="checkmark">
-            <input type="checkbox">
-            Sign up for our newsletter
-        </label>
-        <button type="submit">Sign-up</button>
-    </form>
-    <br>
-    <form>
-        <h3>Already a cheese craver?</h3>
-        <h4>Login here</h4>
-        <label for="email">Email:
-            <input placeholder="myemail@mydomain.com" type="email">
-        </label>
-        <label for="password">Password:
-            <input placeholder="***********************" type="password">
-        </label>
-        <button type="submit">Log-in</button>
-    </form>
-</section>
+<div class="flip-container">
+    <section class="accounts">
+        <div class="flip">
+            <form class="front">
+                <h3>Are you new here?</h3>
+                <p>Get 30% off your order when you create an account!</p>
+                <label for="email">Email:
+                    <input placeholder="myemail@mydomain.com" type="email">
+                </label>
+                <label class="checkmark">
+                    <input type="checkbox">
+                    Sign up for our newsletter
+                </label>
+                <button type="submit">Sign-up</button>
+                <button class="flip-button" type="button">Already have an account?</button>
+            </form>
+            <form class="back">
+                <h3>Already a cheese craver?</h3>
+                <h4>Login here</h4>
+                <label for="email">Email:
+                    <input placeholder="myemail@mydomain.com" type="email">
+                </label>
+                <label for="password">Password:
+                    <input placeholder="***********************" type="password">
+                </label>
+                <button type="submit">Log-in</button>
+                <button class="flip-button" type="button">New user? Create an account</button>
+            </form>
+        </div>
+    </section>
+</div>
 <!-- account section -->
 
 

@@ -1,0 +1,28 @@
+h1, h2, h3 {
+    font-family: var(--font-header);
+    font-weight: var(--font7);
+    color: var(--header);
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+h3 { /* form header */
+    font-size: 2rem;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+}
+
+p { /* form body */
+    font-family: var(--font-body);
+    font-weight: var(--font5);
+    color: var(--body);
+    font-size: 1rem;
+}

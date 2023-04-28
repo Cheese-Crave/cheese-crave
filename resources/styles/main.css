@@ -1,45 +1,24 @@
 /* this style sheet is home to all of our repeating styles */
 /* navigation, header, footer */
 
-/* navigation */
-nav {
-    background-color: var(--card-background);
-    position: fixed;
-    z-index: 1;
-    width: 100%;
+main {
+    padding: 3rem;
+}
+
+/* main page styles */
+.landing-page {
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav ul {
-    display: flex; /* makes the nav list horizontal */
-}
-
-nav li {
-    margin: 1rem; /* creates space between nav items */
-}
-
-nav a {
-    color: var(--body);
-    text-decoration: none; /* removes default underline */
-    font-size: 1rem;
-}
-
-nav a:hover {
-    color: var(--hover);
-}
-
-
-/* footer */
-footer {
-    background-color: var(--card-background);
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
+/*.landing-page button {*/
+/*    width: auto;*/
+/*    background-color: var(--card-background);*/
+/*    color: var(--body);*/
+/*}*/
 
 
 

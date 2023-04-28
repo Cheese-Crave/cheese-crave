@@ -1,26 +1,18 @@
 /* this stylesheet is for styling icons */
-
-.nav-icons { /* container holds all icons */
-    display: flex; /* login & signup icons - color set in reset.css */
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.nav-icon { /* individual icon */
-    padding: .5rem;
-
-}
-
-.nav-icon i {
+/* main page buttons */
+button {
+    background-color: var(--button);
     color: var(--body);
-    display: flex;
-    align-items: center;
-    margin: 1rem;
+    border: .2rem solid var(--border);
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
-.nav-icon i:hover {
-    color: var(--hover);
+button:hover {
+    background-color: var(--body);
+    color: var(--button);
+    border: .2rem solid var(--hover);
 }
 
 /* product page icons */
