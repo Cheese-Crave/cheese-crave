@@ -13,7 +13,7 @@ h2 {
 
 h3 { /* form header */
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0;
 }
 
 h4, h5, h6 {
@@ -25,5 +25,6 @@ p { /* form body */
     font-weight: var(--font5);
     color: var(--body);
     font-size: 1rem;
-    padding: 0;
+    max-width: 40rem;
+    text-align: center;
 }

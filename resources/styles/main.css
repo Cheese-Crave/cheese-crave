@@ -2,21 +2,23 @@
 /* navigation, header, footer */
 
 main {
-    padding: 3rem;
-}
-
-/* main page styles */
-.landing-page {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-
-
-
+.header {
+    font-size: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
 
 
 

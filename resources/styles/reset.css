@@ -15,6 +15,10 @@
     --font7: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html body {
     background-color: var(--page-background);
     font-family: var(--font-body);
@@ -24,9 +28,9 @@ html body {
     overflow-wrap: break-word;
     box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
     scroll-behavior: smooth;
-    min-height: 100vh; /* Set the height of the body element */
     margin: 0;
     padding: 0;
     line-height: 1.5;
 }
+
 

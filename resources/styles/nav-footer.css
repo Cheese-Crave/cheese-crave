@@ -25,18 +25,3 @@ nav li a:hover { /* nav links */
     border: .1rem solid var(--hover);
     border-radius: 5rem;
 }
-
-
-/* footer */
-footer {
-    background-color: var(--nav-background);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 3rem; /* adjust this as needed */
-}
-
-footer p {
-    text-align: center;
-    vertical-align: center;
-}
