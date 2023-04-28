@@ -33,4 +33,7 @@ html body {
     line-height: 1.5;
 }
 
+table, tr, th, td {
+    border: .1rem solid white;
+}
 

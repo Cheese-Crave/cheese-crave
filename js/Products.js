@@ -5,7 +5,7 @@ export class Product {
         this.image = image;
         this.description = description;
         this.labels = labels;
-
+    }
     createCard() {
         // empty container used for styling
         const section = document.createElement("section");
@@ -36,7 +36,7 @@ export class Product {
         // add to cart button
         const addToCart = document.createElement('i');
         addToCart.className = "fa-solid fa-cart-shopping fa-2xl";
-            // when clicked, the addToCart method is called
+        // when clicked, the addToCart method is called
         addToCart.addEventListener('click', () => {
             this.addToCart();
         });
@@ -88,6 +88,7 @@ export class Product {
 
         return section;
     }
+
     addToCart() {
 
         let inCart;
@@ -100,8 +101,6 @@ export class Product {
             inCart = [];
         }
 
-        let inCart = JSON.parse(localStorage.getItem('inCart')) || [];
-
         // search for product in inCart array
         const productArray = inCart.findIndex(item => item.name === this.name);
 
@@ -113,7 +112,7 @@ export class Product {
             // create a new row in the table
             inCart.push({
              name: this.name,
-             quantity: 1;
+             quantity: 1,
              price: this.price
             })
         }

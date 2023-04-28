@@ -19,5 +19,6 @@ function displayCart() {
         // display an empty cart message
         const emptyCart = document.createElement('p')
         emptyCart.innerHTML = "Your cart is empty";
+        inCart.appendChild(emptyCart);
     }
 }
