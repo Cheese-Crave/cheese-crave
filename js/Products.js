@@ -41,7 +41,6 @@ export class Product {
             this.addToCart();
         });
         productIconContainer.appendChild(addToCart);
-        }
 
         // add to wishlist button
         const addToWishlist = document.createElement('i');
@@ -91,6 +90,36 @@ export class Product {
     }
     addToCart() {
 
+        let inCart;
+        // checking storage, getting items that have the key 'inCart'
+        if (localStorage.getItem('inCart')) {
+            // if the item exists, parse the JSON back into JS objecy
+            inCart = JSON.parse(localStorage.getItem('inCart'));
+        } else {
+            // if not, create an empty string
+            inCart = [];
+        }
 
+        let inCart = JSON.parse(localStorage.getItem('inCart')) || [];
+
+        // search for product in inCart array
+        const productArray = inCart.findIndex(item => item.name === this.name);
+
+        // if there are products in the cart
+        if (productArray >= 0) {
+            // increase quantity of product in cart
+            inCart[productArray].quantity++;
+        } else {
+            // create a new row in the table
+            inCart.push({
+             name: this.name,
+             quantity: 1;
+             price: this.price
+            })
+        }
+        // update locaStorage with the modified array
+        localStorage.setItem('inCart', JSON.stringify(inCart));
+        // alert user
+        alert('Added to cart!');
     }
 }
