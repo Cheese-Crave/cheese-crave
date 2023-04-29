@@ -1,5 +1,4 @@
 /* this style sheet is home to all of our repeating styles */
-/* navigation, header, footer */
 
 main {
     height: 100vh;
@@ -7,7 +6,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding-top: 5rem;
     box-sizing: border-box;
 }
 

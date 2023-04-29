@@ -1,8 +1,8 @@
 export class Product {
-    constructor(name, price, image, description, labels) {
+    constructor(image, name, price, description, labels) {
+        this.image = image;
         this.name = name;
         this.price = price;
-        this.image = image;
         this.description = description;
         this.labels = labels;
     }
@@ -11,47 +11,37 @@ export class Product {
         const section = document.createElement("section");
         section.className = 'card';
 
-        // product name
-        const productName = document.createElement("h3");
-        productName.textContent = this.name;
-        section.appendChild(productName);
-
-        // product price
-        const productPrice = document.createElement("p");
-        productPrice.textContent = this.price;
-        section.appendChild(productPrice);
-
         // product image
         const productImage = document.createElement("img");
         productImage.src = this.image;
         section.appendChild(productImage);
 
+        // product name & ratings
+        const productHeading = document.createElement("div");
+        productHeading.className = "productHead";
+
+        const productName = document.createElement("h3");
+        productName.textContent = this.name;
+        productHeading.appendChild(productName);
+        section.appendChild(productHeading);
+
+        let star;
+        for(let i = 1; i <= 5; i++) {
+            star = document.createElement("i");
+            star.className = "fa-solid fa-star fa-sm";
+            productHeading.appendChild(star);
+        }
+        section.appendChild(productHeading);
+
+        // product price
+        const productPrice = document.createElement("p");
+        productPrice.textContent = `$${this.price}.00`;
+        section.appendChild(productPrice);
+
         // product description
         const productDescription = document.createElement("p");
         productDescription.textContent = this.description;
         section.appendChild(productDescription);
-
-        // product buttons/icons
-        const productIconContainer = document.createElement("aside");
-        // add to cart button
-        const addToCart = document.createElement('i');
-        addToCart.className = "fa-solid fa-cart-shopping fa-2xl";
-        // when clicked, the addToCart method is called
-        addToCart.addEventListener('click', () => {
-            this.addToCart();
-        });
-        productIconContainer.appendChild(addToCart);
-
-        // add to wishlist button
-        const addToWishlist = document.createElement('i');
-        addToWishlist.className = "fa-solid fa-gift fa-2xl";
-        productIconContainer.appendChild(addToWishlist);
-        // rate/see ratings buttons
-        const ratings = document.createElement('i');
-        ratings.className = "fa-solid fa-star fa-2xl";
-        productIconContainer.appendChild(ratings);
-
-        section.appendChild(productIconContainer);
 
         // product characteristics via labels
         const labelsContainer = document.createElement("section");
@@ -86,11 +76,28 @@ export class Product {
         });
         section.appendChild(labelsContainer);
 
+        // cart & wishlist buttons container
+        const productIconContainer = document.createElement("aside");
+        // add to cart button
+        const addToCart = document.createElement('i');
+        addToCart.className = "fa-solid fa-cart-shopping fa-2xl";
+        // when clicked, the addToCart method is called
+        addToCart.addEventListener('click', () => {
+            this.addToCart();
+        });
+        productIconContainer.appendChild(addToCart);
+
+        // add to wishlist button
+        const addToWishlist = document.createElement('i');
+        addToWishlist.className = "fa-solid fa-gift fa-2xl";
+        productIconContainer.appendChild(addToWishlist);
+
+        section.appendChild(productIconContainer);
+
         return section;
     }
 
     addToCart() {
-
         let inCart;
         // checking storage, getting items that have the key 'inCart'
         if (localStorage.getItem('inCart')) {
@@ -111,9 +118,10 @@ export class Product {
         } else {
             // create a new row in the table
             inCart.push({
-             name: this.name,
-             quantity: 1,
-             price: this.price
+                image: this.image,
+                name: this.name,
+                quantity: 1,
+                price: this.price
             })
         }
         // update locaStorage with the modified array

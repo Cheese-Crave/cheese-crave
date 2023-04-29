@@ -9,8 +9,9 @@ function displayCart() {
         products.forEach(product => {
             const productInCart = document.createElement('tr')
             productInCart.innerHTML = `
+                <td><img src="${product.image}"></img></td>
                 <td><h3>${product.name}</h3></td>
-                <td><p>(x${product.quantity})</p></td>
+                <td><p>x${product.quantity}</p></td>
                 <td><p>${product.price}</p></td>
                 `;
             inCart.appendChild(productInCart);

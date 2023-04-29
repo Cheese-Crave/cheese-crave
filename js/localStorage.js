@@ -14,9 +14,9 @@ if (products.length === 0) {
     products.forEach((productData) => {
         
         // extracting properties from local storage array
-        const {name, price, image, description, labels} = productData;
+        const {image, name, price, description, labels} = productData;
         // create new instance of Product class
-        const product = new Product(name, price, image, description, labels);
+        const product = new Product(image, name, price, description, labels);
         // create product cards for each product
         const productCard = product.createCard();
         // adding to product.html
