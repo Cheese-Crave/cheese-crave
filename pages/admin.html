@@ -49,22 +49,26 @@
     </section>
     <form id="product-form">
         <label for="name">Product Name:</label>
-        <input id="name" name="name" required type="text">
-        <br>
+        <select id="name" name="name" required>
+            <option value="asiago">Asiago</option>
+            <option value="blue_cheese">Blue Cheese</option>
+            <option value="brie">Brie</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="colby_jack">Colby Jack</option>
+            <option value="swiss">Swiss</option>
+            <option value="gouda">Gouda</option>
+            <option value="monterey_jack">Monterey Jack</option>
+            <option value="pepper_jack">Pepper Jack</option>
+        </select>
         <label for="price">Product Price:</label>
         <input id="price" name="price" required type="number">
-        <br>
         <label for="image">Product Image (SRC):</label>
         <input id="image" name="image" required type="text">
-        <br>
         <label for="description">Product Description:</label>
         <input id="description" name="description" required type="text">
-        <br>
         <label for="labels">Product Labels:</label>
         <input id="labels" name="labels" required type="text">
-        <br>
         <button type="submit">Submit</button>
-        <br>
     </form>
 </main>
 </body>

@@ -1,4 +1,20 @@
 /* this style sheet is home to all of our repeating styles */
+:root {
+    --page-background: #0F0E0E;
+    --nav-background: #820000;
+    --card-background: #820000;
+    --form-background: #4E6C50;
+    --header: #F2DEBA;
+    --body: #FAECD6;
+    --button: #111111;
+    --border: #820000;
+    --hover: #4E6C50;
+    --font-header: 'Rock Salt', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font3: 300;
+    --font5: 500;
+    --font7: 700;
+}
 
 main {
     height: 100vh;
@@ -19,7 +35,60 @@ main {
     padding: 3rem;
 }
 
+/* cart table */
+table,
+th,
+td {
+    border: 1px solid;
+}
 
+table {
+    background-color: var(--form-background);
+    border: 0.0625rem solid var(--border);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: 240px;
+    margin: 0 auto;
+    display: block;
+    overflow-x: auto;
+    border-spacing: 0;
+}
+
+tbody {
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: var(--header);
+    vertical-align: bottom;
+}
+
+th:last-child,
+td:last-child {
+    border-right-width: 0;
+}
+
+tr:last-child td {
+    border-bottom-width: 0;
+}
+
+td img {
+    width: 100%;
+    height: auto;
+    max-width: 8rem;
+    border-radius: 8rem;
+    object-fit: cover;
+}
 
 
 
