@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const flipButtons = document.querySelectorAll('.flip-button');
-    flipButtons.forEach(function (button) {
-        button.addEventListener('click', flipForm);
-    });
+    flipButtons.addEventListener('click', flipForm);
 });
 
 function flipForm() {
