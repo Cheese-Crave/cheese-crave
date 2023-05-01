@@ -54,8 +54,7 @@
     margin-bottom: 1rem;
 }
 
-/* product cards */
-/* General card styles */
+/* cards */
 .card {
     display: flex;
     flex-direction: column;
@@ -69,19 +68,9 @@
     padding: 1rem;
     transition: 0.3s;
 }
-/*.card {*/
-/*    height: 20rem;*/
-/*    text-align: center;*/
-/*    justify-content: space-around;*/
-/*}*/
 
-.card:hover {
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2);
-}
-
-/* Product name */
+/* Product Card - Container for Name & Stars */
 .productHead {
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -106,6 +95,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem; /* creates a gap between rows */
 }
 
 /* Product labels styles */

@@ -1,5 +1,5 @@
 /* this stylesheet is for styling icons */
-/* main page buttons */
+
 button {
     background-color: var(--button);
     color: var(--body);
@@ -16,6 +16,7 @@ i {
     margin-right: 0.5rem;
     cursor: pointer;
 }
+
 i:hover {
     color: var(--hover);
 }
@@ -28,23 +29,4 @@ button:hover {
     background-color: var(--body);
     color: var(--button);
     border: .2rem solid var(--hover);
-}
-
-/* product page icons */
-.product-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.label {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem; /* creates a gap between rows */
-}
-
-.label span {
-    border-radius: 5rem;
-    background-color: var(--card-background);
-    font-size: 1rem;
 }
