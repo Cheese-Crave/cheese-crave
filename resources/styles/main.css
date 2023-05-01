@@ -17,7 +17,7 @@
 }
 
 main {
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,14 +26,18 @@ main {
     box-sizing: border-box;
 }
 
-.header {
-    font-size: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+.landing-page {
+    height: 100vh;
 }
+
+/*.header {*/
+/*    font-size: 70%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 3rem;*/
+/*}*/
 
 /* cart table */
 table,
@@ -41,6 +45,10 @@ th,
 td {
     border: 1px solid;
 }
+
+/*table, tr, th, td {*/
+/*    border: .1rem solid white;*/
+/*}*/
 
 table {
     background-color: var(--form-background);
