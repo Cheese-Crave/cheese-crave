@@ -4,7 +4,7 @@ h1, h2, h3 {
     color: var(--header);
     font-size: 5rem;
     text-align: center;
-    padding: 2rem;
+    /*padding: 2rem;*/
 }
 
 h2 {
@@ -13,7 +13,7 @@ h2 {
 
 h3 { /* form header */
     font-size: 2rem;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 h4, h5, h6 {

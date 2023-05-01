@@ -6,6 +6,7 @@ export class Product {
         this.description = description;
         this.labels = labels;
     }
+
     createCard() {
         // empty container used for styling
         const section = document.createElement("section");
@@ -26,7 +27,7 @@ export class Product {
         section.appendChild(productHeading);
 
         let star;
-        for(let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 5; i++) {
             star = document.createElement("i");
             star.className = "fa-solid fa-star fa-sm";
             productHeading.appendChild(star);
@@ -39,8 +40,14 @@ export class Product {
         section.appendChild(productPrice);
 
         // product description
-        const productDescription = document.createElement("p");
-        productDescription.textContent = this.description;
+        const productDescription = document.createElement("details");
+        const productSummary = document.createElement("summary");
+        const productDescriptionText = document.createElement("p");
+        productSummary.textContent = `Read about ${this.name}`;
+        productDescriptionText.textContent = this.description;
+
+        productDescription.appendChild(productSummary);
+        productDescription.appendChild(productDescriptionText);
         section.appendChild(productDescription);
 
         // product characteristics via labels
