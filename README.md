@@ -2,35 +2,35 @@
 
 This is a portfolio project created to showcase our technical skills and collaboration capabilities. The main purpose of this project is to demonstrate our proficiency in HTML, CSS, JavaScript, Java, and backend database integration. Although the website is designed as a cheese e-commerce platform, it does not actually sell cheese.
 
-## Table of Contents
+---
 
+## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
-4. [Installation and Setup](#installation-and-setup)
-5. [Team Members](#team-members)
-6. [Contributing](#contributing)
-7. [License](#license)
+4. [Team Members](#team-members)
+5. [Contributing](#contributing)
+6. [License](#license)
+---
 
 ## Project Overview
 
 Our cheese e-commerce website is a visually appealing and fully functional platform designed to showcase our team's development skills. The website will include a variety of features, such as product listings, a shopping cart, and user authentication.
 
-### Project Completion Date
-
-This project is expected to be completed by June 10.
 
 ### Project Goals
 
-_TODO: Add a brief description of the goals of this project._
+- Develop a full-stack e-commerce web application: Create an intuitive, responsive, and visually appealing user interface using JavaScript, CSS, and HTML, backed by a robust REST API built with Java and Spring Boot.
+- Implement a comprehensive data management system: Design a MySQL database schema to store and manage product, user, and order data and develop efficient CRUD operations for seamless interactions between the front and back end.
+- Enhance user experience and functionality: Incorporate features such as secure user authentication, dynamic search and filtering, shopping cart functionality, and a streamlined checkout process to provide an enjoyable shopping experience for customers.
+- Optimize performance and maintainability: Ensure cross-browser compatibility, fast loading times, and adherence to web development best practices while integrating analytics and monitoring to gather insights for continuous improvement.
 
 ### Project Demo
 
-The link to our live website. 
+Visit [Cheese Crave](https://cheese-crave.github.io/cheese-crave/)
 
+---
 ## Features
-
-_TODO: List the main features of the cheese e-commerce website. Examples include:_
 
 - Responsive web design
 - Product listing and filtering
@@ -38,30 +38,24 @@ _TODO: List the main features of the cheese e-commerce website. Examples include
 - User authentication and account management
 - Payment integration (simulation)
 
+---
 ## Technologies Used
 
 - HTML
 - CSS
-- JavaScript (To be added)
-- Java (To be added)
+- JavaScript
+- Java
 - Backend Database (To be added, specify the database technology)
 
-## Installation and Setup
-
-_TODO: Provide step-by-step instructions on how to set up and run the project locally._
-
-1. Clone the repository
-2. Install necessary dependencies
-3. Configure environment variables
-4. Run the development server
-
+---
 ## Team Members
 
-1. Name: LinkedIn GitHub
-2. Name: LinkedIn GitHub
-3. Name: LinkedIn GitHub
-4. Name: LinkedIn GitHub
+1. Mary: [LinkedIn](www.linkedin/in/marymkohn) & [GitHub](www.github.com/marymmkohn)
+2. Chyna: [LinkedIn](url) & [GitHub](url)
+3. Mahin: [LinkedIn](url) & [GitHub](url)
+4. Steven: [LinkedIn](url) & [GitHub](url)
 
+---
 ## Contributing
 
 As this is a portfolio project, we are not actively seeking contributions. However, if you have suggestions or feedback, feel free to open an issue or submit a pull request. To contribute, please follow these steps:
@@ -72,8 +66,7 @@ As this is a portfolio project, we are not actively seeking contributions. Howev
 4. Push to the branch (`git push origin feature_branch`)
 5. Open a pull request
 
+---
 ## License
 
-_TODO: Choose an appropriate open-source license and add the license information here._
-
-This project is licensed under the [License Name](LICENSE.md).
+This project is licensed under the MIT License.
