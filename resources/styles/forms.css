@@ -67,7 +67,7 @@ input[type="checkbox"] {
 }
 
 .back {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
     padding: 1rem;
 }
 
@@ -82,4 +82,17 @@ input[type="checkbox"] {
 
 .flip.flipped {
     transform: rotateY(180deg);
+}
+
+/* product form (internal form) */
+#product-form {
+    align-items: center;
+}
+#product-form select {
+    border: 2px solid var(--header);
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
 }

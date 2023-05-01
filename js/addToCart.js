@@ -10,7 +10,7 @@ function displayCart() {
             const productInCart = document.createElement('tr')
             productInCart.innerHTML = `
                 <td><img src="${product.image}"></img></td>
-                <td><h3>${product.name}</h3></td>
+                <td><p>${product.name}</p></td>
                 <td><p>x${product.quantity}</p></td>
                 <td><p>${product.price}</p></td>
                 `;
