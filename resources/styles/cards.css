@@ -60,15 +60,6 @@
     object-fit: cover;
 }
 
-article.back {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100%;
-    border: .1rem solid white;
-}
-
 /* Product Card - Container for Name & Stars */
 .productHead {
     text-align: center;
