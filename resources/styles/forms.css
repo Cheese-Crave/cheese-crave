@@ -24,8 +24,8 @@
 }
 
 form {
-    background-color: var(--form-background);
-    color: var(--body);
+    background-color: var(--olive-green);
+    color: var(--cream-beige);
     border: solid .2rem var(--border);
     border-radius: 2rem;
     height: auto;
@@ -45,7 +45,7 @@ form label {
 }
 
 form input {
-    border: 2px solid var(--header);
+    border: 2px solid var(--border);
     width: 90%;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -89,7 +89,7 @@ input[type="checkbox"] {
     align-items: center;
 }
 #product-form select {
-    border: 2px solid var(--header);
+    border: 2px solid var(--border);
     width: 90%;
     padding: 0.5rem;
     margin-bottom: 1rem;

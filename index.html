@@ -25,38 +25,60 @@
     <link href="./resources/styles/buttons-icons.css" rel="stylesheet">
     <link href="./resources/styles/forms.css" rel="stylesheet">
     <link href="./resources/styles/cards.css" rel="stylesheet">
+
+    <!--  JavaScript Files-->
+    <script src="./js/navbar.js" defer></script>
 </head>
 
 <body>
 <!--  navigation bar -->
 <header>
+    <h1 class="logo">Cheese Crave</h1>
     <nav>
-        <ul>
+        <ul class="nav-panel nav-active">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/product.html">Products</a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
-            <li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
-            <li><a href="pages/account.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
-            <li><a href="pages/admin.html"><i class="fa-solid fa-toolbox fa-lg"></i></a></li>
+            <div class="for-mobile-nav-icons">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
+            </div>
         </ul>
+
+        <div class="nav-bar-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div> 
+        </div>
     </nav>
 </header>
 <!--  end navigation bar -->
 
 
 <main class="landing-page">
-    <h1>Cheese Crave</h1>
-    <a href="./pages/account.html"><button>Create Account</button></a>
+    <h3>All times are good times when there's cheese involved.</h3>
+    <img src="./resources/images/homeBg.jpg" class="home-bg">
+    <h3>Premium-class cheese for all settings...</h3>
+    <a href="./pages/product.html" class="intro-links"><button>Shop the crave!</button></a>
+    <h4 class="call-to-action">Or... Become a Crave member!</h4>
+    <a href="./pages/account.html" class="intro-links"><button>Create Account</button></a>
 </main>
 
 
 <!-- footer section -->
-<!--<footer>-->
-<!--    <p>&copy; Cheese Crave 2023. All rights reserved.</p>-->
-<!--</footer>-->
+<footer>
+    <a href="./pages/account.html" class="create-acc-link">Create Your Account!</a>
+    <a href="./pages/account.html" class="signin-link">Sign in</a>
+    <a href="index.html" class="home-link">Home Page</a>
+    <a href="pages/about.html" class="about-link">About</a>
+    <a href="pages/product.html" class="products-link">View Products</a>
+    <a href="pages/cart.html" class="cart-link">Shopping Cart</a>
+    <h3 class="footer-logo">Cheese Crave</h3>
+    <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
+</footer>
 <!-- end footer section -->
-
 </body>
 
 </html>

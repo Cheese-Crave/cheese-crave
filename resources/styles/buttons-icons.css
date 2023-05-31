@@ -1,33 +1,45 @@
 /* this stylesheet is for styling icons */
 /* main page buttons */
 button {
-    background-color: var(--button);
-    color: var(--body);
-    border: .2rem solid var(--border);
+    background-color: var(--olive-green);
+    color: var(--cream-beige);
     font-size: 1rem;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--burgundy);
+}
+button:hover {
+    border-bottom: 1px solid var(--olive-green);
+    background-color: var(--burgundy);
 }
 
 i {
     font-size: 1.5rem;
-    color: var(--button);
+    color: var(--black);
     transition: 0.3s;
     margin-right: 0.5rem;
     cursor: pointer;
 }
 i:hover {
-    color: var(--hover);
+    color: var(--olive-green);
 }
 
 a {
     text-decoration: none;
+    color: var(--cream-beige);
+    font: inherit;
+    background-color: transparent;
+}
+a:hover {
+    border-bottom: 1px solid var(--cream-beige);
+    background-color: var(--olive-green);
+    padding: 0.3em;
+    border-radius: 2rem;
 }
 
-button:hover {
-    background-color: var(--body);
-    color: var(--button);
-    border: .2rem solid var(--hover);
+/* active class header buttons styling */
+.active {
+    border-bottom: 1px solid var(--cream-beige);
 }
 
 /* product page icons */
