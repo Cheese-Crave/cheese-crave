@@ -1,13 +1,11 @@
 :root {
-    --page-background: #0F0E0E;
-    --nav-background: #820000;
-    --card-background: #820000;
-    --form-background: #4E6C50;
-    --header: #F2DEBA;
-    --body: #FAECD6;
-    --button: #111111;
-    --border: #820000;
-    --hover: #4E6C50;
+    /*accent colors*/
+    --black: #0F0E0E;
+    --burgundy: #820000; /*nav and card background*/
+    --olive-green: #4E6C50; /*form background*/
+    --cream-beige: #F2DEBA; /*page background*/
+    
+    /*font styles*/
     --font-header: 'Rock Salt', sans-serif;
     --font-body: 'Poppins', sans-serif;
     --font3: 300;
@@ -19,8 +17,8 @@
     box-sizing: border-box;
 }
 
-html body {
-    background-color: var(--page-background);
+html, body {
+    background-color: var(--cream-beige);
     font-family: var(--font-body);
     font-weight: var(--font5);
     color: var(--body);
@@ -33,3 +31,17 @@ html body {
     line-height: 1.5;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+} 
+
+table, tr, th, td {
+    border: .1rem solid white;
+}

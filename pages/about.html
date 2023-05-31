@@ -15,6 +15,7 @@
           rel="stylesheet">
 
     <!-- Javascript FontAwesome -->
+    <script src="./js/navbar.js" defer></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8d11417666.js"></script>
 
     <!--  CSS Modularized -->
@@ -31,15 +32,24 @@
 <body>
 <!--  navigation bar -->
 <header>
+    <h1 class="logo">Cheese Crave</h1>
     <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a class="active" href="./about.html">About</a></li>
-            <li><a href="./product.html">Products</a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
-            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
-            <li><a href="./account.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
+        <ul class="nav-panel nav-active">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="pages/about.html">About</a></li>
+            <li><a href="pages/product.html">Products</a></li>
+            <div class="for-mobile-nav-icons">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+            </div>
         </ul>
+
+        <div class="nav-bar-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div> 
+        </div>
     </nav>
 </header>
 <!--  end navigation bar -->
@@ -60,13 +70,11 @@
                 <h3>Steven<br>Salcido</h3>
             </article>
             <article class="back team">
-                <p>Description</p>
-                <aside>
-                    <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                    <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
-                    <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                </aside>
+                <p>Steven is an ambitious and open-minded software developer, driven by a deep passion for continuous learning and a fearless approach to new challenges. With a thirst for knowledge, he eagerly embraces emerging technologies and methodologies, leveraging them to push the boundaries of his software development expertise.</p>
+                <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
+                <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
             </article>
         </section>
         <!--    MARY    -->
@@ -76,13 +84,11 @@
                 <h3>Mary<br>Kohn</h3>
             </article>
             <article class="back team">
-                <p>Description</p>
-                <aside>
-                    <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                    <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
-                    <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                </aside>
+                <p>Mary is an exceptionally talented and committed software developer, known for her diligence and agility in tackling complex projects. With a strong dedication to her craft, she consistently delivers high-quality results while adapting seamlessly to evolving industry demands.</p>
+                <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
+                <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
             </article>
         </section>
         <!--    MAHIN    -->
@@ -93,14 +99,11 @@
                 <h3>Mahin<br>Khandker</h3>
             </article>
             <article class="back team">
-                <p>Description</p>
-                <aside>
-                    <a href="https://www.linkedin.com/in/mahin-khandker-883938186/"><i
-                            class="fa-brands fa-linkedin fa-2xl"></i></a>
-                    <a href="https://github.com/mkhandker19"><i class="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://mkhandker19.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
-                    <a href="mailto:mahinkhandker706@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                </aside>
+                <p>Mahin is a dedicated software developer who constantly seeks opportunities to enhance his skills and knowledge. Passionate about tackling intricate software challenges, Mahin's unwavering commitment to his work shines through in his pursuit of excellence.</p>
+                <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
+                <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
             </article>
         </section>
         <!--    CHYNA    -->
@@ -111,22 +114,27 @@
                 <h3>Chyna<br>Davis</h3>
             </article>
             <article class="back team">
-                <p>Description</p>
-                <aside>
-                    <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                    <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
-                    <a href="mailto:marymkohn@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                </aside>
+                <p>Chyna is a software developer driven by a deep passion for pushing boundaries and fostering innovation through her design skills. Her ability to merge technical expertise with creative flair results in captivating and cutting-edge software solutions that redefine user experiences.</p>
+                <a href="https://www.linkedin.com/in/marymkohn/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://github.com/marymkohn"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://marymkohn.github.io/"><i class="fa-regular fa-globe fa-2xl"></i></a>
+                <a href="mailto:cdavis2757@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
             </article>
         </section>
     </div>
 </main>
 
 <!-- footer section -->
-<!--<footer>-->
-<!--    <p>&copy; Cheese Crave 2023. All rights reserved.</p>-->
-<!--</footer>-->
+<footer>
+    <a href="./pages/account.html" class="create-acc-link">Create Your Account!</a>
+    <a href="./pages/account.html" class="signin-link">Sign in</a>
+    <a href="index.html" class="home-link">Home Page</a>
+    <a href="pages/about.html" class="about-link">About</a>
+    <a href="pages/product.html" class="products-link">View Products</a>
+    <a href="pages/cart.html" class="cart-link">Shopping Cart</a>
+    <h3 class="footer-logo">Cheese Crave</h3>
+    <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
+</footer>
 <!-- end footer section -->
 </body>
 

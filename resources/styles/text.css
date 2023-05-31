@@ -4,7 +4,8 @@ h1, h2, h3 {
     color: var(--header);
     font-size: 5rem;
     text-align: center;
-    /*padding: 2rem;*/
+    padding: 2rem;
+    color: var(--black);
 }
 
 h2 {
@@ -18,12 +19,13 @@ h3 { /* form header */
 
 h4, h5, h6 {
     font-size: 1rem;
+    color: var(--burgundy);
 }
 
 p { /* form body */
     font-family: var(--font-body);
     font-weight: var(--font5);
-    color: var(--body);
+    color: var(--black);
     font-size: 1rem;
     max-width: 40rem;
     text-align: center;

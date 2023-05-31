@@ -14,8 +14,9 @@
           rel="stylesheet">
 
     <!-- Javascript FontAwesome -->
-    <script defer src="../js/addToCart.js" type="module"></script>
-    <script defer src="../js/Products.js" type="module"></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="../js/addToCart.js" defer type="module"></script>
+    <script src="../js/Products.js" defer type="module"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8d11417666.js"></script>
 
     <!--  CSS Modularized -->
@@ -33,15 +34,24 @@
 
 <!--  navigation bar -->
 <header>
+    <h1 class="logo">Cheese Crave</h1>
     <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./product.html">Products</a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
-            <li><a class="active" href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
-            <li><a href="./account.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
+        <ul class="nav-panel nav-active">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/product.html">Products</a></li>
+            <div class="for-mobile-nav-icons">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+                <li><a class="active" href="pages/cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+                <li><a href="pages/account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+            </div>
         </ul>
+
+        <div class="nav-bar-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div> 
+        </div>
     </nav>
 </header>
 <!--  end navigation bar -->
@@ -83,13 +93,17 @@
 </main>
 
 
-<!-- end main section -->
-
 <!-- footer section -->
-<!--<footer>-->
-<!--    <p>&copy; Cheese Crave 2023. All rights reserved.</p>-->
-<!--</footer>-->
+<footer>
+    <a href="./pages/account.html" class="create-acc-link">Create Your Account!</a>
+    <a href="./pages/account.html" class="signin-link">Sign in</a>
+    <a href="index.html" class="home-link">Home Page</a>
+    <a href="pages/about.html" class="about-link">About</a>
+    <a href="pages/product.html" class="products-link">View Products</a>
+    <a href="pages/cart.html" class="cart-link">Shopping Cart</a>
+    <h3 class="footer-logo">Cheese Crave</h3>
+    <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
+</footer>
 <!-- end footer section -->
-
 </body>
 </html>

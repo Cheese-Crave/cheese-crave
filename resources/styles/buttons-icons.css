@@ -1,32 +1,63 @@
 /* this stylesheet is for styling icons */
 
 button {
-    background-color: var(--button);
-    color: var(--body);
-    border: .2rem solid var(--border);
+    background-color: var(--olive-green);
+    color: var(--cream-beige);
     font-size: 1rem;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--burgundy);
+}
+button:hover {
+    border-bottom: 1px solid var(--olive-green);
+    background-color: var(--burgundy);
 }
 
 i {
     font-size: 1.5rem;
-    color: var(--button);
+    color: var(--black);
     transition: 0.3s;
     margin-right: 0.5rem;
     cursor: pointer;
 }
 
 i:hover {
-    color: var(--hover);
+    color: var(--olive-green);
 }
 
 a {
     text-decoration: none;
+    color: var(--cream-beige);
+    font: inherit;
+    background-color: transparent;
+}
+a:hover {
+    border-bottom: 1px solid var(--cream-beige);
+    background-color: var(--olive-green);
+    padding: 0.3em;
+    border-radius: 2rem;
 }
 
-button:hover {
-    background-color: var(--body);
-    color: var(--button);
-    border: .2rem solid var(--hover);
+/* active class header buttons styling */
+.active {
+    border-bottom: 1px solid var(--cream-beige);
+}
+
+/* product page icons */
+.product-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* creates a gap between rows */
+}
+
+.label span {
+    border-radius: 5rem;
+    background-color: var(--card-background);
+    font-size: 1rem;
 }
