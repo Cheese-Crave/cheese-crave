@@ -14,7 +14,7 @@ h2 {
 
 h3 { /* form header */
     font-size: 2rem;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 h4, h5, h6 {

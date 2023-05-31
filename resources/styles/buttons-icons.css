@@ -1,5 +1,5 @@
 /* this stylesheet is for styling icons */
-/* main page buttons */
+
 button {
     background-color: var(--olive-green);
     color: var(--cream-beige);
@@ -20,6 +20,7 @@ i {
     margin-right: 0.5rem;
     cursor: pointer;
 }
+
 i:hover {
     color: var(--olive-green);
 }

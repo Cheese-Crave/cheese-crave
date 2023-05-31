@@ -17,13 +17,16 @@
 /* Home Page styling */
 
 main {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     margin: 15rem 0 20rem;
+}
+
+.landing-page {
+    height: 100vh;
 }
 
 .home-bg {
@@ -78,22 +81,7 @@ th {
     vertical-align: bottom;
 }
 
-th:last-child,
-td:last-child {
-    border-right-width: 0;
-}
 
-tr:last-child td {
-    border-bottom-width: 0;
-}
-
-td img {
-    width: 100%;
-    height: auto;
-    max-width: 8rem;
-    border-radius: 8rem;
-    object-fit: cover;
-}
 
 
 
