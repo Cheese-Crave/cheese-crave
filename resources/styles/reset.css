@@ -6,42 +6,38 @@
     --cream-beige: #F2DEBA; /*page background*/
     
     /*font styles*/
-    --font-header: 'Rock Salt', sans-serif;
-    --font-body: 'Poppins', sans-serif;
     --font3: 300;
     --font5: 500;
     --font7: 700;
+    --font-header: 'Rock Salt', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html, body {
-    background-color: var(--cream-beige);
-    font-family: var(--font-body);
-    font-weight: var(--font5);
-    color: var(--body);
-    font-size: 16px;
-    overflow-wrap: break-word;
-    box-sizing: border-box; /* width & height include the padding & border, easier to size elements consistently.*/
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
     line-height: 1.5;
+    font-size: 16px;
+    color: var(--black);
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    font-weight: var(--font5);
+    font-family: var(--font-body);
+    background-color: var(--cream-beige);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-image: url("../images/cheesyBackground.png");
 } 
-
-table, tr, th, td {
-    border: .1rem solid white;
-}

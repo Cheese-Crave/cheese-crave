@@ -1,41 +1,43 @@
 /* this stylesheet is for styling icons */
-
 button {
-    background-color: var(--olive-green);
-    color: var(--cream-beige);
+    padding: 0.5em;
     font-size: 1rem;
     border-radius: 2rem;
-    padding: 0.5em;
-    border-bottom: 1px solid var(--burgundy);
+    color: var(--cream-beige);
+    border: 1px solid var(--burgundy);
+    background-color: var(--olive-green); 
 }
+
 button:hover {
-    border-bottom: 1px solid var(--olive-green);
-    background-color: var(--burgundy);
+    transition: 0.2s;
+    border: 1px solid var(--olive-green);
+    background-color: var(--burgundy); 
 }
 
 i {
+    cursor: pointer;
+    transition: 0.2s;
     font-size: 1.5rem;
     color: var(--black);
-    transition: 0.3s;
-    margin-right: 0.5rem;
-    cursor: pointer;
 }
 
 i:hover {
-    color: var(--olive-green);
+    color: var(--cream-beige);
 }
 
 a {
+    font: inherit;
     text-decoration: none;
     color: var(--cream-beige);
-    font: inherit;
     background-color: transparent;
 }
+
 a:hover {
-    border-bottom: 1px solid var(--cream-beige);
-    background-color: var(--olive-green);
     padding: 0.3em;
+    transition: 0.2s;
     border-radius: 2rem;
+    background-color: var(--olive-green);
+    border-bottom: 1px solid var(--cream-beige);
 }
 
 /* active class header buttons styling */
@@ -46,8 +48,8 @@ a:hover {
 /* product page icons */
 .product-icons {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
 .label {
@@ -57,7 +59,7 @@ a:hover {
 }
 
 .label span {
-    border-radius: 5rem;
-    background-color: var(--card-background);
     font-size: 1rem;
+    border-radius: 5rem;
+    background-color: var(--burgundy);
 }

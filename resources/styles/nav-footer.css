@@ -1,36 +1,36 @@
 /* navigation */
 nav {
-    background-color: var(--burgundy);
-    position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    height: 5rem;
     width: 100%;
+    height: 5rem;
+    z-index: 8000;
     display: flex;
+    position: fixed;
+    align-items: center;
     justify-content: flex-end;
+    background-color: var(--burgundy);
 }
 
 .nav-panel {
+    /* padding: 1rem; */
     display: flex; /* makes the nav list horizontal */
     list-style: none; /* no bullet points */
-    padding: 1rem 1rem;
     background-color: var(--burgundy);
 }
 
 .nav-panel li a { /* nav links */
-    color: var(--cream-beige);
-    text-decoration: none; /* removes default underline */
     padding: .5rem 1rem;
+    text-decoration: none; /* removes default underline */
+    color: var(--cream-beige);
 }
 
 .logo {
-    position: fixed;
-    top: 0.1rem;
-    z-index: 5;
+    top: 0;
+    z-index: 9000;
     font-size: 2rem;
-    padding: 0;
-    margin-left: 1rem;
+    position: fixed;
+    padding: 1rem 0 0 1.5rem;
     color: var(--cream-beige);
 }
 
@@ -39,21 +39,21 @@ nav {
 }
 
 .nav-bar-container {
-    display: none;    
-    width: 35px;
-    height: 25px;
-    position: absolute;
     top: 2em;
     right: 2em;
+    width: 35px;
+    height: 25px;
     z-index: 9999;
+    display: none; 
     cursor: pointer;
+    position: absolute;  
 }
 
 .nav-bar-container div {
-    background-color: var(--cream-beige);
-    border-radius: 5px;
     width: 100%;
     height: 4px;
+    border-radius: 5px;
+    background-color: var(--cream-beige);
 }
 
 .nav-bar-container .bar2 {
@@ -66,29 +66,23 @@ nav {
     body {
         overflow-x: hidden;
     }
-    header {
-        margin-bottom: 2em;
-    }
     nav {
+        align-items: normal;
         justify-content: space-between;
     }
     .nav-panel {
-        flex-direction: column;
-        height: 100vh;
         width: 70%;
-        align-items: center;
+        height: 100vh;
         margin-top: 5em;
-        background-color: hsla(0, 100%, 25%, 0.9);
+        flex-direction: column;
+        align-items: center;
         transform: translateX(100%);
         transition: transform 500ms ease-in;
+        background-color: hsla(0, 100%, 25%, 0.9);
     }
     .nav-panel li {
         /* opacity: 0; */
         padding: 2em 0;
-    }
-    .nav-panel li:hover {
-        text-decoration: wavy;
-        box-shadow: 10px 10px 10px var(--border);
     }
     .nav-bar-container {
         display: block;
@@ -98,7 +92,7 @@ nav {
     }
     .logo {
         font-size: 1.5rem;
-        margin-left: 0;
+        padding-top: 1.5rem;
     }
     .nav-active {
         transform: translateX(0%);
@@ -108,9 +102,10 @@ nav {
 /* footer css  */
 footer {
     bottom: 0;
+    z-index: 7000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 75px);
+    grid-template-rows: repeat(3, 80px);
     grid-template-areas: 
         "createAcc home viewProducts"
         "signin about cart"
@@ -118,12 +113,8 @@ footer {
     background-color: var(--burgundy);
     align-items: center;
     justify-items: center;
-    padding: 1em 4em;
+    padding: 1em 5em;
 }
-
-/* footer a {
-    back
-} */
 
 .create-acc-link {
     grid-area: createAcc;
@@ -150,13 +141,13 @@ footer {
 }
 
 .footer-logo {
-    color: var(--cream-beige);
     grid-area: logo;
+    color: var(--cream-beige);
 }
 
 footer p {
-    color: var(--cream-beige);
     grid-area: copyright;
+    color: var(--cream-beige);
 }
 
 @media(max-width: 37em) {
