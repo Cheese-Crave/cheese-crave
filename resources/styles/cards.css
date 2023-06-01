@@ -1,33 +1,35 @@
 /* ALL card containers */
 #product-container,
 .card-container {
-    max-width: 90%;
+    gap: 2rem;
     display: flex;
+    max-width: 90%;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 /* ALL individual cards */
 .card {
     display: flex;
+    /* margin: 1rem; */
+    padding: 1rem;
+    width: 18.75rem;
+    transition: 0.3s;
+    align-items: center;
+    border-radius: 0.5rem;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    width: 18rem;
-    background-color: var(--card-background);
-    border: 0.1rem solid var(--border);
-    border-radius: 0.5rem;
-    margin: 1rem;
-    padding: 1rem;
-    transition: 0.3s;
+    background-color: var(--burgundy);
+    border: 3px solid var(--olive-green);
 }
 
 /* Team card styles */
-.team-flip { /* container for items in team card */
-    position: relative;
-    perspective: 1000px;
+.team-flip { /* container for items in team card */ 
     width: 12rem;
     height: 20rem;
+    position: relative;
+    perspective: 1000px;
 }
 
 .team-flip:hover .front {
@@ -39,60 +41,44 @@
 }
 
 .team { /* container for items in front & back card */
-    position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    border-radius: 0.5rem;
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
     align-items: center;
-    background-color: var(--burgundy);
+    border-radius: 0.5rem;
+    flex-direction: column;
     transition: transform 0.6s;
+    backface-visibility: hidden;
+    background-color: var(--burgundy);
 }
 
 .team img.team-member {
-    display: block;
     width: 100%;
     height: 60%;
     margin: 0 auto;
-    border-radius: 8rem;
+    display: block;
     object-fit: cover;
+    border-radius: 8rem;
 }
 
 .team h3 {
-    font-size: 1.5rem;
     margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--cream-beige);
 }
 
 .team p {
+    text-align: left;
     margin-bottom: 1rem;
+    color: var(--cream-beige);
 }
 
 /* product cards */
 /* General card styles */
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 18.75rem;
-    background-color: var(--burgundy);
-    border: 0.0625rem solid var(--border);
-    border-radius: 0.5rem;
-    margin: 1rem;
-    padding: 1rem;
-    transition: 0.3s;
-}
-/*.card {*/
-/*    height: 20rem;*/
-/*    text-align: center;*/
-/*    justify-content: space-around;*/
-/*}*/
-
 .card:hover {
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.5);
 }
 
 /* Product Card - Container for Name & Stars */
@@ -110,10 +96,10 @@
 
 /* Product icon container styles */
 .card aside {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
     margin-bottom: 1rem;
+    justify-content: space-between;
 }
 
 /* Product labels container styles */
@@ -126,11 +112,11 @@
 
 /* Product labels styles */
 .card .characteristics {
-    font-family: var(--font-body);
-    color: var(--body);
     font-size: .75rem;
-    background-color: var(--hover);
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
+    color: var(--cream-beige);
     margin: 0 0.25rem 0.25rem 0;
+    font-family: var(--font-body);
+    background-color: var(--olive-green);
 }

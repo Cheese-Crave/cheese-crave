@@ -1,11 +1,10 @@
 h1, h2, h3 {
-    font-family: var(--font-header);
-    font-weight: var(--font7);
-    color: var(--header);
+    padding: 2rem;
     font-size: 5rem;
     text-align: center;
-    padding: 2rem;
     color: var(--black);
+    font-weight: var(--font7);
+    font-family: var(--font-header);
 }
 
 h2 {
@@ -14,7 +13,6 @@ h2 {
 
 h3 { /* form header */
     font-size: 2rem;
-    /*padding: 0;*/
 }
 
 h4, h5, h6 {
@@ -22,11 +20,11 @@ h4, h5, h6 {
     color: var(--burgundy);
 }
 
-p { /* form body */
-    font-family: var(--font-body);
-    font-weight: var(--font5);
-    color: var(--black);
+p {
     font-size: 1rem;
     max-width: 40rem;
     text-align: center;
+    color: var(--black);
+    font-weight: var(--font5);
+    font-family: var(--font-body);
 }
