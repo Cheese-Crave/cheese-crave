@@ -1,4 +1,4 @@
-# Cheese E-Commerce Portfolio Project
+# Cheese Crave E-Commerce Portfolio Project
 
 This is a portfolio project created to showcase our technical skills and collaboration capabilities. The main purpose of this project is to demonstrate our proficiency in HTML, CSS, JavaScript, Java, and backend database integration. Although the website is designed as a cheese e-commerce platform, it does not actually sell cheese.
 
@@ -45,13 +45,14 @@ Visit [Cheese Crave](https://cheese-crave.github.io/cheese-crave/)
 - CSS
 - JavaScript
 - Java
-- Backend Database (To be added, specify the database technology)
+- Spring Data JPA
+- MySQL
 
 ---
 ## Team Members
 
 1. Mary: [LinkedIn](www.linkedin/in/marymkohn) & [GitHub](www.github.com/marymmkohn)
-2. Chyna: [LinkedIn](url) & [GitHub](url)
+2. Chyna: [LinkedIn](www.linkedin.com/in/chynamdavis/) & [GitHub](www.github.com/cmdavis21)
 3. Mahin: [LinkedIn](url) & [GitHub](url)
 4. Steven: [LinkedIn](url) & [GitHub](url)
 
