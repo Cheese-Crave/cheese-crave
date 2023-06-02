@@ -15,16 +15,14 @@
 }
 
 /* Home Page styling */
-header {
-    margin-bottom: 3rem;
-}
-
 main { /* applies to all main tags on every page*/
-    margin: 5rem 0;
+    width: 95%;
+    /* padding: 15rem 0; */
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    background-color: aqua;
 }
 
 @media(max-width: 90em) {

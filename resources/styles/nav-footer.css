@@ -102,6 +102,7 @@ nav {
 /* footer css  */
 footer {
     bottom: 0;
+    width: 100%;
     z-index: 7000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -110,10 +111,11 @@ footer {
         "createAcc home viewProducts"
         "signin about cart"
         "logo copyright copyright";
-    background-color: var(--burgundy);
+    /* position: sticky; */
+    padding: 1em 5em;
     align-items: center;
     justify-items: center;
-    padding: 1em 5em;
+    background-color: var(--burgundy);
 }
 
 .create-acc-link {

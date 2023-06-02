@@ -12,7 +12,7 @@
 4. forms.css
     - Used for the account.html and admin.html forms.
 5. main.css
-    - Features speacial styles not applicable to other CSS files such as the main tag, header, and accompanying media queries.
+    - Features speacial styles not applicable to other CSS files within the main tag and header, and accompanying media queries.
 6. nav-footer.css
     - Applies to the naviagtion pane (found in the header) and footer. 
 7. reset.css
