@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="../resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
-    <title>CheeseCrave.com | Administration</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
+  <title>CheeseCrave.com | Administration</title>
 
-    <!--  Google Fonts (Rock Salt, Poppins) -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
-          rel="stylesheet">
+  <!--  Google Fonts (Rock Salt, Poppins) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
 
-    <!--  Javascript  -->
-    <script src="./js/navbar.js" defer></script>
-    <script src="../js/productCard.js" defer type="module"></script>
-    <script src="../js/Products.js" defer type="module"></script>
+  <!--  Javascript  -->
+  <script defer src="./js/navbar.js"></script>
+  <script defer src="../js/productCard.js" type="module"></script>
+  <script defer src="../js/Products.js" type="module"></script>
 
-    <!--  CSS Modularized -->
-    <link href="../resources/styles/reset.css" rel="stylesheet">
-    <link href="../resources/styles/nav-footer.css" rel="stylesheet">
-    <link href="../resources/styles/main.css" rel="stylesheet">
-    <link href="../resources/styles/text.css" rel="stylesheet">
-    <link href="../resources/styles/buttons-icons.css" rel="stylesheet">
-    <link href="../resources/styles/forms.css" rel="stylesheet">
-    <link href="../resources/styles/cards.css" rel="stylesheet">
+  <!--  CSS Modularized -->
+  <link href="../resources/styles/reset.css" rel="stylesheet">
+  <link href="../resources/styles/nav-footer.css" rel="stylesheet">
+  <link href="../resources/styles/main.css" rel="stylesheet">
+  <link href="../resources/styles/text.css" rel="stylesheet">
+  <link href="../resources/styles/buttons-icons.css" rel="stylesheet">
+  <link href="../resources/styles/forms.css" rel="stylesheet">
+  <link href="../resources/styles/cards.css" rel="stylesheet">
 </head>
 
 <body>
 <!--  navigation bar -->
 <header>
-    <h1 class="logo">Cheese Crave</h1>
-    <nav>
-        <ul class="nav-panel nav-active">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/product.html">Products</a></li>
-            <div class="for-mobile-nav-icons">
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
-                <li><a href="pages/cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
-                <li><a href="pages/account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
-                <li><a class="active" href="pages/admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
-            </div>
-        </ul>
+  <h1 class="logo">Cheese Crave</h1>
+  <nav>
+    <ul class="nav-panel nav-active">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./product.html">Products</a></li>
+      <div class="for-mobile-nav-icons">
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+        <li><a href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+        <li><a class="active" href="./admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
+      </div>
+    </ul>
 
-        <div class="nav-bar-container">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div> 
-        </div>
-    </nav>
+    <div class="nav-bar-container">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </nav>
 </header>
 <!--  end of navigation bar -->
 
 <!-- add product form -->
 <main>
-    <section class="form-info">
-        <h1>More Cheese Please!</h1>
-        <h4>Fill out the form below to add a product.</h4>
-    </section>
-    <form id="product-form">
-        <label for="name">Product Name:</label>
-        <select id="name" name="name" required>
-            <option value="asiago">Asiago</option>
-            <option value="blue_cheese">Blue Cheese</option>
-            <option value="brie">Brie</option>
-            <option value="cheddar">Cheddar</option>
-            <option value="colby_jack">Colby Jack</option>
-            <option value="swiss">Swiss</option>
-            <option value="gouda">Gouda</option>
-            <option value="monterey_jack">Monterey Jack</option>
-            <option value="pepper_jack">Pepper Jack</option>
-        </select>
-        <label for="price">Product Price:</label>
-        <input id="price" name="price" required type="number">
-        <label for="image">Product Image (SRC):</label>
-        <input id="image" name="image" required type="text">
-        <label for="description">Product Description:</label>
-        <input id="description" name="description" required type="text">
-        <label for="labels">Product Labels:</label>
-        <input id="labels" name="labels" required type="text">
-        <button type="submit">Submit</button>
-    </form>
+  <section class="form-info">
+    <h1>More Cheese Please!</h1>
+    <h4>Fill out the form below to add a product.</h4>
+  </section>
+  <form id="product-form">
+    <label for="name">Product Name:</label>
+    <select id="name" name="name" required>
+      <option value="asiago">Asiago</option>
+      <option value="blue_cheese">Blue Cheese</option>
+      <option value="brie">Brie</option>
+      <option value="cheddar">Cheddar</option>
+      <option value="colby_jack">Colby Jack</option>
+      <option value="swiss">Swiss</option>
+      <option value="gouda">Gouda</option>
+      <option value="monterey_jack">Monterey Jack</option>
+      <option value="pepper_jack">Pepper Jack</option>
+    </select>
+    <label for="price">Product Price:</label>
+    <input id="price" name="price" required type="number">
+    <label for="image">Product Image (SRC):</label>
+    <input id="image" name="image" required type="text">
+    <label for="description">Product Description:</label>
+    <input id="description" name="description" required type="text">
+    <label for="labels">Product Labels:</label>
+    <input id="labels" name="labels" required type="text">
+    <button type="submit">Submit</button>
+  </form>
 </main>
 
 <!-- footer section -->
 <footer>
-    <a href="./pages/account.html" class="create-acc-link">Create Your Account!</a>
-    <a href="./pages/account.html" class="signin-link">Sign in</a>
-    <a href="index.html" class="home-link">Home Page</a>
-    <a href="pages/about.html" class="about-link">About</a>
-    <a href="pages/product.html" class="products-link">View Products</a>
-    <a href="pages/cart.html" class="cart-link">Shopping Cart</a>
-    <h3 class="footer-logo">Cheese Crave</h3>
-    <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
+  <a class="create-acc-link" href="./account.html">Create Your Account!</a>
+  <a class="signin-link" href="./account.html">Sign in</a>
+  <a class="home-link" href="../index.html">Home Page</a>
+  <a class="about-link" href="./about.html">About</a>
+  <a class="products-link" href="./product.html">View Products</a>
+  <a class="cart-link" href="./cart.html">Shopping Cart</a>
+  <h3 class="footer-logo">Cheese Crave</h3>
+  <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
 </footer>
 <!-- end footer section -->
 </body>
