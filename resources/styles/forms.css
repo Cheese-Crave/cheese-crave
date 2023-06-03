@@ -6,8 +6,8 @@
 }
 
 .accounts {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 34rem;
 }
 
 .flip {
@@ -25,11 +25,11 @@
 form {
     display: flex;
     height: auto;
-    padding: 1rem;
-    width: 20rem;
+    padding: 1.6em;
+    width: 30em;
     border-radius: 2rem;
     flex-direction: column;
-    justify-content: space-around;
+    align-content: center;
     color: var(--cream-beige);
     border: 3px solid var(--burgundy);
     background-color: var(--olive-green);
@@ -38,7 +38,6 @@ form {
 .form-info h4 {
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 form p {
@@ -47,22 +46,23 @@ form p {
 
 form label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 form input {
-    width: 90%;
-    font : inherit;
+    width: 95%;
+    font: inherit;
     padding: 0.5rem;
     font-size: 1rem;
-    margin-bottom: 1rem;
     border-radius: 2rem;
     border: 2px solid var(--border);
 }
 
 form button {
+    text-align: center;
     width: 90%;
-    margin-top: 1em;
+    margin: 1.2em auto;
+    display: block;
     text-transform: uppercase;
     color: var(--burgundy);
     background-color: var(--cream-beige);
@@ -113,7 +113,7 @@ input[type="checkbox"] {
 
 #product-form select {
     width: 90%;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 2rem;

@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="../resources/icons/swissCheeseIcon.png" rel="icon" type="image/icon">
-  <title>CheeseCrave.com | Account</title>
+  <link href="../resources/icons/cheeseIcon.png" rel="icon" type="image/icon">
+  <title>CheeseCrave.com | Login or Sign-up</title>
 
   <!--  Google Fonts (Rock Salt, Poppins) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
 
-  <!-- Javascript FontAwesome -->
-  <script defer src="./js/navbar.js"></script>
-  <script defer src="../js/formFlip.js" type="module"></script>
+  <!-- FontAwesome -->
   <script crossorigin="anonymous" src="https://kit.fontawesome.com/8d11417666.js"></script>
 
   <!--  CSS Modularized -->
@@ -26,24 +24,29 @@
   <link href="../resources/styles/buttons-icons.css" rel="stylesheet">
   <link href="../resources/styles/forms.css" rel="stylesheet">
   <link href="../resources/styles/cards.css" rel="stylesheet">
+  <link href="../resources/styles/mediaQueries.css" rel="stylesheet">
+
+  <!--  JavaScript Files-->
+  <script src="./js/navbar.js" defer></script>
 </head>
 
 <body>
 <!--  navigation bar -->
 <header>
-  <h1 class="logo">Cheese Crave</h1>
+  <a href="../index.html" class="header-logo">CheeseCrave</a> 
   <nav>
     <ul class="nav-panel nav-active">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="./about.html">About</a></li>
       <li><a href="./product.html">Products</a></li>
+      <li><a href="./recipes.html">Crave Recipes</a></li>
+      <li><a href="./about.html">About</a></li>
       <div class="for-mobile-nav-icons">
         <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
         <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
         <li><a class="active" href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
       </div>
     </ul>
-
+    
+    <!--Mobile Navber Menu Icon-->
     <div class="nav-bar-container">
       <div class="bar1"></div>
       <div class="bar2"></div>
@@ -55,15 +58,17 @@
 
 <!-- account section -->
 <main class="flip-container landing-page">
-  <h2>Create Your Account</h2>
-  <h3>or Sign-in</h3>
+  <h2>Welcome, Cheese Craver!</h2>
   <section class="accounts">
     <div class="flip">
       <form class="front">
         <h3>Are you new here?</h3>
         <p>Get 30% off your order when you create an account!</p>
         <label for="email">Email:
-          <input placeholder="myemail@mydomain.com" type="email">
+          <input placeholder="myemail@mydomain.com" type="email" required>
+        </label>
+        <label for="password">Password:
+          <input placeholder="*****************" type="password" required>
         </label>
         <label class="checkmark">
           <input type="checkbox">
@@ -75,10 +80,10 @@
       <form class="back">
         <h3>Already a cheese craver?</h3>
         <label for="email">Email:
-          <input placeholder="myemail@mydomain.com" type="email">
+          <input placeholder="myemail@mydomain.com" type="email" required>
         </label>
         <label for="password">Password:
-          <input placeholder="***********************" type="password">
+          <input placeholder="*****************" type="password" required>
         </label>
         <button type="submit">Log-in</button>
         <button class="flip-button" type="button">New user? Create an account</button>
@@ -92,12 +97,12 @@
 <footer>
   <a class="create-acc-link" href="./account.html">Create Your Account!</a>
   <a class="signin-link" href="./account.html">Sign in</a>
-  <a class="home-link" href="../index.html">Home Page</a>
+  <a class="home-link" href="./recipes.html">Crave Recipes</a>
   <a class="about-link" href="./about.html">About</a>
   <a class="products-link" href="./product.html">View Products</a>
   <a class="cart-link" href="./cart.html">Shopping Cart</a>
-  <h3 class="footer-logo">Cheese Crave</h3>
-  <p class="copyright">&copy; Cheese Crave 2023. All rights reserved.</p>
+  <a href="../index.html" class="footer-logo">CheeseCrave</a> 
+  <p class="copyright">&copy; CheeseCrave 2023. All rights reserved.</p>
 </footer>
 <!-- end footer section -->
 </body>

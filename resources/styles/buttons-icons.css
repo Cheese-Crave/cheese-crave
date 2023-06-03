@@ -16,17 +16,17 @@ button:hover {
 
 i {
     cursor: pointer;
-    transition: 0.2s;
     font-size: 1.5rem;
-    color: var(--black);
-}
-
-i:hover {
     color: var(--cream-beige);
 }
 
+i:hover {
+    transition: 0.2s;
+    color: var(--black);
+}
+
 a {
-    font: inherit;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--cream-beige);
     background-color: transparent;

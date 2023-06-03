@@ -10,25 +10,19 @@
     --font3: 300;
     --font5: 500;
     --font7: 700;
+    --fs: 16px;
     --font-header: 'Rock Salt', sans-serif;
     --font-body: 'Poppins', sans-serif;
 }
 
 /* Home Page styling */
 main { /* applies to all main tags on every page*/
-    width: 95%;
-    /* padding: 15rem 0; */
+    width: 90%;
+    margin: 6rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    background-color: aqua;
-}
-
-@media(max-width: 90em) {
-   .landing-page h2 {
-        font-size: 2rem;
-    } 
+    align-items: center;
 }
 
 .intro-section {
@@ -37,7 +31,7 @@ main { /* applies to all main tags on every page*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "brie-img info-area mozz-img";
-    margin: 5rem 0;
+    margin-top: 5rem;
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -63,7 +57,7 @@ main { /* applies to all main tags on every page*/
 }
 
 .info-area h3 {
-  font-size: 1.5em; 
+  font-size: 1.4em; 
 }
 
 .info-area h4 {
@@ -79,32 +73,10 @@ main { /* applies to all main tags on every page*/
     grid-area: mozz-img;
 }
 
-@media(max-width: 93em) {
-    .intro-section {
-        width: 70%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "info-area";
-    }
-    .brie-img, .mozz-img {
-        display: none;
-    }
-    .info-area {
-        max-width: 800px;
-    }
-}
-
 .hero-bg {
     width: 90%;
-    height: 725px;
+    height: 710px;
     border-radius: 2rem;
-}
-
-@media(max-width: 81em) {
-    .hero-bg {
-        height: unset;
-    }
 }
 
 .call-to-action {

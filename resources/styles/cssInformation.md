@@ -13,13 +13,15 @@
     - Used for the account.html and admin.html forms.
 5. main.css
     - Features speacial styles not applicable to other CSS files within the main tag and header, and accompanying media queries.
-6. nav-footer.css
+6. mediaQueries.css
+    - CSS file dedicated to containing media queries, @container, and other responsive attributes
+7. nav-footer.css
     - Applies to the naviagtion pane (found in the header) and footer. 
-7. reset.css
+8. reset.css
     - Contains basic css reset properties including the root variables.
 8. tables.css
     - Styles the shopping cart page table.
-9. text.css
+10. text.css
     - presets css headers and p tags size, padding, color, family, and weight.
 
 
@@ -28,6 +30,7 @@
     - logo (in header): 9000 
     - navbar-container (the 3 bar menu hamburger): 9999
     - nav: 8000
+    - header: 7500;
     - footer: 7000
     - .front (flip.css): 200
-    - .front(forms.css): 200
+    - .front (forms.css): 200

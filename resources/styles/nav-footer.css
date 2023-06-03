@@ -1,3 +1,5 @@
+/* header */
+
 /* navigation */
 nav {
     top: 0;
@@ -20,17 +22,8 @@ nav {
 }
 
 .nav-panel li a { /* nav links */
-    padding: .5rem 1rem;
+    padding: .5rem 1.5rem;
     text-decoration: none; /* removes default underline */
-    color: var(--cream-beige);
-}
-
-.logo {
-    top: 0;
-    z-index: 9000;
-    font-size: 2rem;
-    position: fixed;
-    padding: 1rem 0 0 1.5rem;
     color: var(--cream-beige);
 }
 
@@ -60,59 +53,21 @@ nav {
     margin: 0.4em 0;
 }
 
-/*  mobile navigation styling  */
-
-@media (max-width: 35em) {
-    body {
-        overflow-x: hidden;
-    }
-    nav {
-        align-items: normal;
-        justify-content: space-between;
-    }
-    .nav-panel {
-        width: 70%;
-        height: 100vh;
-        margin-top: 5em;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 500ms ease-in;
-        background-color: hsla(0, 100%, 25%, 0.9);
-    }
-    .nav-panel li {
-        /* opacity: 0; */
-        padding: 2em 0;
-    }
-    .nav-bar-container {
-        display: block;
-    }
-    .for-mobile-nav-icons {
-        display: flex;
-    }
-    .logo {
-        font-size: 1.5rem;
-        padding-top: 1.5rem;
-    }
-    .nav-active {
-        transform: translateX(0%);
-    }
-}
-
 /* footer css  */
 footer {
-    bottom: 0;
+    left: 0;
     width: 100%;
     z-index: 7000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 80px);
     grid-template-areas: 
-        "createAcc home viewProducts"
+        "createAcc recipes viewProducts"
         "signin about cart"
         "logo copyright copyright";
-    /* position: sticky; */
-    padding: 1em 5em;
+    /* margin-top: 4rem; */
+    margin-top: auto;
+    padding: 1em 4.5em;
     align-items: center;
     justify-items: center;
     background-color: var(--burgundy);
@@ -127,7 +82,7 @@ footer {
 }
 
 .home-link {
-    grid-area: home;
+    grid-area: recipes;
 }
 
 .about-link {
@@ -143,39 +98,24 @@ footer {
 }
 
 .footer-logo {
+    font-size: 2em;
     grid-area: logo;
     color: var(--cream-beige);
+    font-weight: var(--font7);
+    font-family: var(--font-header);
+    color: var(--cream-beige);
+}
+
+.footer-logo:hover {
+    border: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    background-color: transparent;
 }
 
 footer p {
     grid-area: copyright;
     color: var(--cream-beige);
-}
-
-@media(max-width: 37em) {
-    footer {
-        padding: 1em;
-        grid-gap: 1em;
-    }
-}
-
-@media(max-width: 35em) {
-    footer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 30px);
-        grid-template-areas: 
-            "logo createAcc"
-            "logo signin"
-            "logo viewProducts"
-            "logo cart"
-            "logo home"
-            "logo about"
-            "copyright copyright";
-        justify-items: start;
-    }
-    footer p {
-        justify-self: center;
-    }
 }
 
 
