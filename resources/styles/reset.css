@@ -1,27 +1,16 @@
-:root {
-    /*accent colors*/
-    --black: #0F0E0E;
-    --burgundy: #820000; /*nav and card background*/
-    --olive-green: #4E6C50; /*form background*/
-    --cream-beige: #F2DEBA; /*page background*/
-    
-    /*font styles*/
-    --font3: 300;
-    --font5: 500;
-    --font7: 700;
-    --font-header: 'Rock Salt', sans-serif;
-    --font-body: 'Poppins', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 html, body {
-    line-height: 1.5;
     font-size: 16px;
+    min-height: 100%;
+    line-height: 1.5;
     color: var(--black);
     scroll-behavior: smooth;
     overflow-wrap: break-word;
@@ -35,9 +24,20 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/cheesyBackground.png");
+}
+
 body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    background-image: url("../images/cheesyBackground.png");
+
 } 

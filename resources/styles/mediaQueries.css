@@ -1,0 +1,115 @@
+/* css file dedicated to containing media queries, @container, and other responsive attributes */
+
+/* Media Queries for ALL text between 320px to 414px - mobile application */
+
+/* @media(max-width: 37em) {
+    footer {
+        padding: 1em;
+        grid-gap: 1.5em;
+    }
+    footer a, footer p {
+        font-size: 0.9em;
+    }
+    .footer-logo {
+        font-size: 1.5em;
+    }
+    .footer-logo:hover {
+        font-size: 2em;
+    }
+} */
+
+/* Media Queries for ALL buttons/icons between 320px to 414px - mobile application */
+
+
+/* Media Queries for ALL Home Page Styling between 320px to 414px - mobile application */
+@media(max-width: 90em) {
+    .landing-page h2 {
+         font-size: 2rem;
+     } 
+ }
+ 
+ @media(min-width: 37em) {
+     main {
+         width: 95%;
+     }
+}
+
+@media(max-width: 93em) {
+    .intro-section {
+        width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "info-area";
+    }
+    .brie-img, .mozz-img {
+        display: none;
+    }
+    .info-area {
+        max-width: 800px;
+    }
+}
+
+@media(max-width: 81em) {
+    .hero-bg {
+        height: unset;
+    }
+}
+
+
+/* Media Queries for Nav and Footer between 320px to 414px - mobile application */
+
+@media (max-width: 62em) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        align-items: normal;
+        justify-content: space-between;
+    }
+    .nav-panel {
+        width: 50%;
+        height: 100vh;
+        margin-top: 5em;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in;
+        background-color: hsla(0, 100%, 25%, 0.9);
+    }
+    .nav-panel li {
+        /* opacity: 0; */
+        padding: 2em 0;
+    }
+    .nav-bar-container {
+        display: block;
+    }
+    .for-mobile-nav-icons {
+        display: flex;
+    }
+    .header-logo {
+        font-size: 0.5em;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width: 35em) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 30px);
+        grid-template-areas: 
+            "logo createAcc"
+            "logo signin"
+            "logo viewProducts"
+            "logo cart"
+            "logo recipes"
+            "logo about"
+            "copyright copyright";
+        justify-items: start;
+    }
+    footer p {
+        justify-self: center;
+    }
+}
