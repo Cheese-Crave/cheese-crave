@@ -2,7 +2,7 @@
 
 /* Media Queries for ALL text between 320px to 414px - mobile application */
 
-/* @media(max-width: 37em) {
+@media(max-width: 37em) {
     footer {
         padding: 1em;
         grid-gap: 1.5em;
@@ -16,7 +16,7 @@
     .footer-logo:hover {
         font-size: 2em;
     }
-} */
+}
 
 /* Media Queries for ALL buttons/icons between 320px to 414px - mobile application */
 
@@ -50,55 +50,96 @@
     }
 }
 
-@media(max-width: 81em) {
-    .hero-bg {
-        height: unset;
-    }
-}
 
-
-/* Media Queries for Nav and Footer between 320px to 414px - mobile application */
-
+/* Media Queries for Nav and Footer - mobile application */
 @media (max-width: 62em) {
     body {
         overflow-x: hidden;
     }
+
     nav {
         align-items: normal;
         justify-content: space-between;
     }
+  
     .nav-panel {
-        width: 50%;
-        height: 100vh;
-        margin-top: 5em;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 500ms ease-in;
-        background-color: hsla(0, 100%, 25%, 0.9);
+      width: 50%;
+      height: 100vh;
+      margin-top: 5em;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 500ms ease-in;
+      background-color: hsla(0, 100%, 25%, 0.9);
     }
+  
     .nav-panel li {
-        /* opacity: 0; */
-        padding: 2em 0;
+      opacity: 0;
+      padding: 2em 0;
     }
+
     .nav-bar-container {
+        top: 2em;
+        right: 2em;
+        width: 30px;
+        height: 20px;
+        z-index: 9999;
         display: block;
+        cursor: pointer;
+        position: absolute;
+        transform: rotate(-90deg);
     }
-    .for-mobile-nav-icons {
-        display: flex;
+    
+    .nav-bar-container div {
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: var(--cream-beige);
     }
-    .header-logo {
-        font-size: 0.5em;
+    
+    .nav-bar-container .bar2 {
+        margin: 0.4em 0;
     }
-    .nav-active {
+    
+    /* Mobile Navigation Animation */
+    .nav-panel.nav-active {
         transform: translateX(0%);
+    }
+    
+    .nav-panel:not(.nav-active) {
+        transform: translateY(-100%);
+    }
+    
+    .nav-panel.nav-active li {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+  
+    /* Mobile Navigation Animation */
+    .nav-panel.nav-active {
+      transform: translateX(0%);
+    }
+
+    .rotate-horizontal {
+        transform: rotate(180deg);
     }
 }
 
-@media(max-width: 35em) {
+@media(max-width: 40em) {
+    /* .for-mobile-nav-icons {
+        flex-direction: column;
+    } */
+    .nav-panel {
+        width: 100%;
+    }
+}
+
+
+/* Footer Media Query */
+/* @media(max-width: 35em) {
     footer {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 30px);
+        grid-template-rows: repeat(9, 30px);
         grid-template-areas: 
             "logo createAcc"
             "logo signin"
@@ -106,10 +147,12 @@
             "logo cart"
             "logo recipes"
             "logo about"
-            "copyright copyright";
+            "subscribe subscribe"
+            "fine-print fine-print"
+            "cards cards";
         justify-items: start;
     }
     footer p {
         justify-self: center;
     }
-}
+} */

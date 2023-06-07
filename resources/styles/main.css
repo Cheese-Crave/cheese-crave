@@ -1,21 +1,5 @@
 /* this style sheet is home to all of our repeating styles */
-:root {
-    /*accent colors*/
-    --black: #0F0E0E;
-    --burgundy: #820000; /*nav and card background*/
-    --olive-green: #4E6C50; /*form background*/
-    --cream-beige: #F2DEBA; /*page background*/
-    
-    /*font styles*/
-    --font3: 300;
-    --font5: 500;
-    --font7: 700;
-    --fs: 16px;
-    --font-header: 'Rock Salt', sans-serif;
-    --font-body: 'Poppins', sans-serif;
-}
 
-/* Home Page styling */
 main { /* applies to all main tags on every page*/
     width: 90%;
     margin: 6rem 0;
@@ -25,6 +9,71 @@ main { /* applies to all main tags on every page*/
     align-items: center;
 }
 
+/* Home page image slider */
+#slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+#slider figure {
+  display: flex;
+  width: 800%; /* Adjust this value based on the number of slides */
+  margin: 0;
+  animation: slide 30s infinite;
+  
+}
+
+#slider img {
+  width: 12.5%; /* Adjust this value based on the number of slides */
+  float: left;
+  border-radius: 2rem;
+  border: 5px solid var(--burgundy);
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: -100%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  40% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  60% {
+    margin-left: -300%;
+  }
+  70% {
+    margin-left: -300%;
+  }
+  80% {
+    margin-left: -400%;
+  }
+  90% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -500%;
+  }
+}
+
+
+/* Add any additional styles you need for the slider */
+
+  
+  
+  
+
+/* Home page text section*/
 .intro-section {
     width: 80%;
     display: grid;
@@ -44,6 +93,10 @@ main { /* applies to all main tags on every page*/
 
 .brie-img {
     grid-area: brie-img;
+}
+
+.mozz-img {
+    grid-area: mozz-img;
 }
 
 .info-area {
@@ -67,16 +120,6 @@ main { /* applies to all main tags on every page*/
 
 .info-area button {
     font-size: 1.25rem;
-}
-
-.mozz-img {
-    grid-area: mozz-img;
-}
-
-.hero-bg {
-    width: 90%;
-    height: 710px;
-    border-radius: 2rem;
 }
 
 .call-to-action {
