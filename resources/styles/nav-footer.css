@@ -38,7 +38,7 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    padding: 3em;
+    padding: 4em;
     font-size: 12px;
     background-color: var(--burgundy);
     background-image: url(../images/cheeseTexture.png);
@@ -57,6 +57,7 @@ footer {
     flex-basis: 15%;
     padding: 10px;
     width: fit-content;
+    justify-content: center;
 }
 
 .col *:not(.col h4, .logo, .col form i, .col form button, .col form input) {
@@ -110,11 +111,15 @@ footer {
     font-size: 30px;
 }
 
+.social-links i:hover {
+    cursor: pointer;
+}
+
 .payment-methods {
     display: flex;
     padding-top: 2em;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .payment-methods img {

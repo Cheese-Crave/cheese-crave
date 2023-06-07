@@ -1,84 +1,89 @@
 .recipe-container {
-display: flex;
-
+  display: flex;
 }
+
 .ingredients, .ingredients2, .ingredients3, .directions{
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    border-bottom: 1px solid #ddd;
-    width: 80%;
-    line-height: 1.5;
-    position: relative;
-    left: 35px;
-  }
+  padding: 10px;
+  color: var(--black);
+  font-size: 18px;
+  border-bottom: 1px solid var(--cream-beige);
+  width: 80%;
+  line-height: 1.5;
+  position: relative;
+  left: 35px;
+}
 
-.directions2
+.ingredients2{
+  padding-left: 100px;
+}
 
-  .ingredients2{
-    padding-left: 100px;
-  }
-  .ingredients3{
-    padding-left: 150px;
-  }
-  .swiss-mac {
-    position: relative;
-    left: 45px;
-  }
-  .swiss-mac, .colby-jack, .blue-cheese {
-    max-width: 250px;
-    height: auto;
-    border-radius: 50%;
-  }
+.ingredients3{
+  padding-left: 150px;
+}
 
-  .recipe-heading, .recipe-heading2, .recipe-heading3{
-color: #A53429;
-position: relative;
-left: 100px;
-  }
+.swiss-mac {
+  position: relative;
+  left: 45px;
+}
 
-  .recipe-heading2{
-    padding-left: 120px;
-  }
+.swiss-mac, .colby-jack, .blue-cheese {
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
 
-  .recipe-heading3{
-    padding-left: 150px;
-  }
+.recipe-heading, .recipe-heading2, .recipe-heading3{
+  color: var(--burgundy);
+  position: relative;
+  left: 100px;
+}
+
+.recipe-heading2{
+  padding-left: 120px;
+}
+
+.recipe-heading3{
+  padding-left: 150px;
+}
+
 .colby-jack {
-    position: relative;
-    left: 180px;
+  position: relative;
+  left: 180px;
 }
 
 .colby-jack-cheese-fries-heading{
-    padding-left: 150px;
+  padding-left: 150px;
 }
+
 .blue-cheese-pizza-heading{
-    padding-left: 160px;
+  padding-left: 160px;
 }
+
 .blue-cheese{
-    position: relative;
-    left: 200px;
+  position: relative;
+  left: 200px;
 }
+
 .directions2{
-    padding-left: 100px;
-    color: black;
-    font-size: 18px;
-    line-height: 1.5;
-    position: relative;
+  padding-left: 100px;
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
 }
 
 .asiago{
-max-width: 250px;
-border-radius: 50%;
+  max-width: 250px;
+  border-radius: 50%;
 
 }
 
 .brie{
-    max-width: 250px;
-    border-radius: 50%;
+  max-width: 250px;
+  border-radius: 50%;
 }
 
 .feta{
-    max-width: 250px;
-    border-radius: 50%;
+  max-width: 250px;
+  border-radius: 50%;
 }

@@ -2,21 +2,6 @@
 
 /* Media Queries for ALL text between 320px to 414px - mobile application */
 
-@media(max-width: 37em) {
-    footer {
-        padding: 1em;
-        grid-gap: 1.5em;
-    }
-    footer a, footer p {
-        font-size: 0.9em;
-    }
-    .footer-logo {
-        font-size: 1.5em;
-    }
-    .footer-logo:hover {
-        font-size: 2em;
-    }
-}
 
 /* Media Queries for ALL buttons/icons between 320px to 414px - mobile application */
 
@@ -134,25 +119,14 @@
     }
 }
 
-
 /* Footer Media Query */
-/* @media(max-width: 35em) {
+
+@media (max-width: 62em) {
     footer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(9, 30px);
-        grid-template-areas: 
-            "logo createAcc"
-            "logo signin"
-            "logo viewProducts"
-            "logo cart"
-            "logo recipes"
-            "logo about"
-            "subscribe subscribe"
-            "fine-print fine-print"
-            "cards cards";
-        justify-items: start;
+        bottom: unset;
+        padding: 1em;
     }
-    footer p {
-        justify-self: center;
+    .col {
+        flex-basis: 100%;
     }
-} */
+}

@@ -31,79 +31,125 @@
 </head>
 
 <body>
-<!--  navigation bar -->
-<header>
-  <a href="../index.html" class="header-logo">CheeseCrave</a> 
-  <nav>
-    <ul class="nav-panel nav-active">
-      <li><a href="./product.html">Products</a></li>
-      <li><a href="./recipes.html">Crave Recipes</a></li>
-      <li><a href="./about.html">About</a></li>
-      <div class="for-mobile-nav-icons">
-        <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
-        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
-        <li><a class="active" href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+  <!--  navigation bar -->
+  <header>
+    <a href="../index.html" class="header-logo">CheeseCrave</a> 
+    <nav>
+      <ul class="nav-panel nav-active">
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./recipes.html">Crave Recipes</a></li>
+        <li><a href="./about.html">About</a></li>
+        <div class="for-mobile-nav-icons">
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+          <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+          <li><a class="active" href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+        </div>
+      </ul>
+      
+      <!--Mobile Navber Menu Icon-->
+      <div class="nav-bar-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </ul>
-    
-    <!--Mobile Navber Menu Icon-->
-    <div class="nav-bar-container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    </nav>
+  </header>
+  <!--  end navigation bar -->
+
+  <!-- account section -->
+  <main class="flip-container landing-page">
+    <h2>Welcome, Cheese Craver!</h2>
+    <section class="accounts">
+      <div class="flip">
+        <form class="front">
+          <h3>Are you new here?</h3>
+          <p>Get 30% off your order when you create an account!</p>
+          <label for="email">Email:
+            <input placeholder="myemail@mydomain.com" type="email" required>
+          </label>
+          <label for="password">Password:
+            <input placeholder="*****************" type="password" required>
+          </label>
+          <label class="checkmark">
+            <input type="checkbox">
+            Sign up for our newsletter
+          </label>
+          <button type="submit">Sign-up</button>
+          <button class="flip-button" type="button">Already have an account?</button>
+        </form>
+        <form class="back">
+          <h3>Already a cheese craver?</h3>
+          <label for="email">Email:
+            <input placeholder="myemail@mydomain.com" type="email" required>
+          </label>
+          <label for="password">Password:
+            <input placeholder="*****************" type="password" required>
+          </label>
+          <button type="submit">Log-in</button>
+          <button class="flip-button" type="button">New user? Create an account</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- footer start -->
+  <footer>
+    <div class="row">
+        <div class="col">
+            <h2 class="logo">CheeseCrave</h2>
+            <div class="legal-links">
+                <a href="./termsOfUse.html" target="_blank">Terms of Use</a>
+                <p> | </p>
+                <a href="./refundPolicy.html" target="_blank">Refund Policy</a> 
+            </div>
+            <p class="fine-print">&copy; CheeseCrave 2023. All rights reserved. Unauthorized use, reproduction, or distribution of the materials on this website is strictly prohibited without prior written permission from CheeseCrave. For inquiries, contact info@cheesecrave.com.</p>    
+        </div>
+        <div class="col">
+            <a class="products-link" href="./product.html">View Products</a>
+            <a class="cart-link" href="./cart.html">Shopping Cart</a>
+            <a class="home-link" href="./recipes.html">Crave Recipes</a>
+            <div class="payment-methods">
+                <img src="../resources/images/paymentCardsImgs/Visa-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/MasterCard-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/AmericanExpress-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/Discover-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/DinersClub-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/Paypal-card-light.png" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <a class="create-acc-link" href="./account.html">Create Your Account!</a>
+            <a class="signin-link" href="./account.html">Sign in</a>
+            <a class="about-link" href="./about.html">About CheeseCrave</a>
+            <div class="social-links">
+                <i class="fa fa-facebook-square" aria-hiden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            </div>  
+        </div>
+        <div class="col">
+            <h4>Contact</h4>
+            <p>1-88-CRAVE</p>
+            <p>(1-882-7289)</p>
+            <p>MON - FRI 9AM - 6PM PST</p>
+            <a href="mailto:info@cheesecrave.com">info@cheesecrave.com</a>
+            <h4>Location</h4>
+            <p>11345 Swiss Lane</p>
+            <p>Cyprus Valley, CA 92111</p>
+        </div>
+        <div class="col">
+            <h4>Subscribe!</h4>
+            <p>Get access to deals, gifts, and more.</p>
+            <form>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" placeholder="joinus@cheesecrave.com" required>
+                <button type="submit"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+            </form>
+        </div>
     </div>
-  </nav>
-</header>
-<!--  end navigation bar -->
-
-<!-- account section -->
-<main class="flip-container landing-page">
-  <h2>Welcome, Cheese Craver!</h2>
-  <section class="accounts">
-    <div class="flip">
-      <form class="front">
-        <h3>Are you new here?</h3>
-        <p>Get 30% off your order when you create an account!</p>
-        <label for="email">Email:
-          <input placeholder="myemail@mydomain.com" type="email" required>
-        </label>
-        <label for="password">Password:
-          <input placeholder="*****************" type="password" required>
-        </label>
-        <label class="checkmark">
-          <input type="checkbox">
-          Sign up for our newsletter
-        </label>
-        <button type="submit">Sign-up</button>
-        <button class="flip-button" type="button">Already have an account?</button>
-      </form>
-      <form class="back">
-        <h3>Already a cheese craver?</h3>
-        <label for="email">Email:
-          <input placeholder="myemail@mydomain.com" type="email" required>
-        </label>
-        <label for="password">Password:
-          <input placeholder="*****************" type="password" required>
-        </label>
-        <button type="submit">Log-in</button>
-        <button class="flip-button" type="button">New user? Create an account</button>
-      </form>
-    </div>
-  </section>
-</main>
-
-
-<!-- footer section -->
-<footer>
-  <a class="create-acc-link" href="./account.html">Create Your Account!</a>
-  <a class="signin-link" href="./account.html">Sign in</a>
-  <a class="home-link" href="./recipes.html">Crave Recipes</a>
-  <a class="about-link" href="./about.html">About</a>
-  <a class="products-link" href="./product.html">View Products</a>
-  <a class="cart-link" href="./cart.html">Shopping Cart</a>
-  <a href="../index.html" class="footer-logo">CheeseCrave</a> 
-  <p class="copyright">&copy; CheeseCrave 2023. All rights reserved.</p>
-</footer>
-<!-- end footer section -->
+  </footer>
+  <!-- footer end -->
 </body>
 </html>
