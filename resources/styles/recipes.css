@@ -1,84 +1,31 @@
+.recipe-heading,{
+  color: #A53429;
+  position: relative;
+  left: 100px;
+    }
 .recipe-container {
-display: flex;
-
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px;
+  justify-items: center;
+  align-content: center;
+  text-align: center; 
+  margin: auto;
+  
 }
-.ingredients, .ingredients2, .ingredients3, .directions{
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    border-bottom: 1px solid #ddd;
-    width: 80%;
-    line-height: 1.5;
-    position: relative;
-    left: 35px;
-  }
-
-.directions2
-
-  .ingredients2{
-    padding-left: 100px;
-  }
-  .ingredients3{
-    padding-left: 150px;
-  }
-  .swiss-mac {
-    position: relative;
-    left: 45px;
-  }
-  .swiss-mac, .colby-jack, .blue-cheese {
+.recipe-container > div {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  background-color: green;
+  border: 2px solid #800020;
+}
+  .swiss-mac, .colby-jack, .blue-cheese,  .brie, .feta, .asiago {
     max-width: 250px;
     height: auto;
     border-radius: 50%;
   }
-
-  .recipe-heading, .recipe-heading2, .recipe-heading3{
-color: #A53429;
-position: relative;
-left: 100px;
-  }
-
-  .recipe-heading2{
-    padding-left: 120px;
-  }
-
-  .recipe-heading3{
-    padding-left: 150px;
-  }
-.colby-jack {
-    position: relative;
-    left: 180px;
-}
-
-.colby-jack-cheese-fries-heading{
-    padding-left: 150px;
-}
-.blue-cheese-pizza-heading{
-    padding-left: 160px;
-}
-.blue-cheese{
-    position: relative;
-    left: 200px;
-}
-.directions2{
-    padding-left: 100px;
-    color: black;
-    font-size: 18px;
-    line-height: 1.5;
-    position: relative;
-}
-
-.asiago{
-max-width: 250px;
-border-radius: 50%;
-
-}
-
-.brie{
-    max-width: 250px;
-    border-radius: 50%;
-}
-
-.feta{
-    max-width: 250px;
-    border-radius: 50%;
-}
+ .ingredients{
+  list-style-type: none;
+ }
