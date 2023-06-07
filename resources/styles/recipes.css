@@ -1,31 +1,35 @@
-.recipe-heading,{
+h4, h5, h7 {
+  text-align: center;
+}
+
+.ingredients, .directions {
+  text-align: left;
+}
+
+.recipe-heading {
   color: #A53429;
-  position: relative;
-  left: 100px;
-    }
+}
+
 .recipe-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-items: center;
   align-content: center;
-  text-align: center; 
+  text-align: center;
   margin: auto;
-  
 }
+.swiss-mac, .colby-jack, .blue-cheese,  .brie, .feta, .asiago {
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
 .recipe-container > div {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f5f5f5;
-  background-color: green;
+  background-color:  olive;
   border: 2px solid #800020;
+
 }
-  .swiss-mac, .colby-jack, .blue-cheese,  .brie, .feta, .asiago {
-    max-width: 250px;
-    height: auto;
-    border-radius: 50%;
-  }
- .ingredients{
-  list-style-type: none;
- }
