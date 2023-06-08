@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-  
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="../resources/icons/cheeseIcon.png" rel="icon" type="image/icon">
-  <title>CheeseCrave.com | Login or Sign-up</title>
+  <title>CheeseCrave.com | Products</title>
 
   <!--  Google Fonts (Rock Salt, Poppins) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,12 +28,6 @@
 
   <!--  JavaScript Files-->
   <script src="./js/navbar.js" defer></script>
-  <script src="../js/Products.js" defer></script>
-  <script src="../js/productCard.js" defer></script>
-  <script src="../js/addToCart.js" defer></script>
-  <script src="../js/formFlip.js" defer></script>
-  <script src="../js/itemsController.js" defer></script>
-  <script src="../js/localStorage.js" defer></script>
 </head>
 
 <body>
@@ -48,11 +42,11 @@
         <div class="for-mobile-nav-icons">
           <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
           <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
-          <li><a class="active" href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+          <li><a href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+          <li><a href="./admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
         </div>
       </ul>
-      
-      <!--Mobile Navber Menu Icon-->
+
       <div class="nav-bar-container">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -62,42 +56,65 @@
   </header>
   <!--  end navigation bar -->
 
-  <!-- account section -->
-  <main class="flip-container landing-page">
-    <h2>Welcome, Cheese Craver!</h2>
-    <section class="accounts">
-      <div class="flip">
-        <form class="front">
-          <h3>Are you new here?</h3>
-          <p>Get 30% off your order when you create an account!</p>
-          <label for="email">Email:
-            <input placeholder="myemail@mydomain.com" type="email" required>
-          </label>
-          <label for="password">Password:
-            <input placeholder="*****************" type="password" required>
-          </label>
-          <label class="checkmark">
-            <input type="checkbox">
-            Sign up for our newsletter
-          </label>
-          <button type="submit">Sign-up</button>
-          <button class="flip-button" type="button">Already have an account?</button>
-        </form>
-        <form class="back">
-          <h3>Already a cheese craver?</h3>
-          <label for="email">Email:
-            <input placeholder="myemail@mydomain.com" type="email" required>
-          </label>
-          <label for="password">Password:
-            <input placeholder="*****************" type="password" required>
-          </label>
-          <button type="submit">Log-in</button>
-          <button class="flip-button" type="button">New user? Create an account</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <main >
+    <div class="refund-policy-page">
+      <h2>Refund Policy</h2>
+      <p>Thank you for shopping at CheeseCrave. We want you to be completely satisfied with your purchase. Please review our refund policy below:</p>
+      <br>
+      <h4>1. Eligibility for Refunds:</h4>
+      <ul>
+        <li>We accept returns and provide refunds only for cheese products that are still wrapped in their original packaging.</li>
+        <li>The original packaging must be unopened and in its original condition.</li>
+      </ul>
 
+      <h4>2. Timeframe for Returns:</h4>
+      <ul>
+        <li>You must initiate the return process within 10 days of the purchase date.</li>
+        <li>Returns received after the 10-day period will not be accepted.</li>
+      </ul>
+
+      <h4>3. Return Process:</h4>
+      <ul>
+        <li>To initiate a return, please contact our customer service team at <a href="mailto:info@cheesecrave.com" class="text-email-link">info@cheesecrave.com</a> within the designated timeframe.</li>
+        <li>Provide your order details, including the purchase date and product information.</li>
+      </ul>
+
+      <h4>4. Return Shipping:</h4>
+      <ul>
+        <li>You are responsible for the shipping costs associated with returning the product.</li>
+        <li>We recommend using a trackable shipping service to ensure the safe return of the product.</li>
+        <li>Shipping costs are non-refundable.</li>
+      </ul>
+
+      <h4>5. Refund Processing:</h4>
+      <ul>
+        <li>Once we receive the returned product and verify its eligibility, we will process the refund.</li>
+        <li>The refund will be issued to the original payment method used for the purchase.</li>
+        <li>Please allow for a reasonable processing time for the refund to reflect in your account.</li>
+      </ul>
+
+      <h4>6. Non-Refundable Items:</h4>
+      <ul>
+        <li>Perishable cheese products that have been opened or partially consumed are not eligible for refunds.</li>
+        <li>Any products that are not in their original packaging or have been damaged due to improper handling or storage are also non-refundable.</li>
+      </ul>
+
+      <h4>7. Exceptions:</h4>
+      <ul>
+        <li>In the event that you receive a defective or damaged product, please contact our customer service team immediately.</li>
+        <li>We will work with you to provide a replacement or issue a refund, depending on the circumstances.</li>
+      </ul>
+
+      <h4>8. Contact Us:</h4>
+      <p>If you have any questions or need assistance with our refund policy, please contact our customer service team at <a href="mailto:info@cheesecrave.com" class="text-email-link">info@cheesecrave.com</a>. We are here to help!</p>
+
+      <p>Please note that this refund policy applies only to purchases made directly through our website. If you purchased our products from a third-party retailer, please refer to their respective refund policies.</p>
+
+      <p>By making a purchase on our website, you acknowledge and agree to abide by the terms and conditions of this refund policy.</p>
+      <br><br>
+      <p>Last updated: June 2023</p>
+    </div>
+  </main>
 
   <!-- footer start -->
   <footer>

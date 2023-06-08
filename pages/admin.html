@@ -28,78 +28,129 @@
 
   <!--  JavaScript Files-->
   <script src="./js/navbar.js" defer></script>
+  <script src="../js/Products.js" defer></script>
+  <script src="../js/productCard.js" defer></script>
+  <script src="../js/addToCart.js" defer></script>
+  <script src="../js/formFlip.js" defer></script>
+  <script src="../js/itemsController.js" defer></script>
+  <script src="../js/localStorage.js" defer></script>
 </head>
 
 <body>
-<!--  navigation bar -->
-<header>
-  <a href="../index.html" class="header-logo">CheeseCrave</a> 
-  <nav>
-    <ul class="nav-panel nav-active">
-      <li><a href="./product.html">Products</a></li>
-      <li><a href="./recipes.html">Crave Recipes</a></li>
-      <li><a href="./about.html">About</a></li>
-      <div class="for-mobile-nav-icons">
-        <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
-        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
-        <li><a href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
-        <li><a class="active" href="./admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
+  <!--  navigation bar -->
+  <header>
+    <a href="../index.html" class="header-logo">CheeseCrave</a> 
+    <nav>
+      <ul class="nav-panel nav-active">
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./recipes.html">Crave Recipes</a></li>
+        <li><a href="./about.html">About</a></li>
+        <div class="for-mobile-nav-icons">
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-lg nav-icon"></i></a></li>
+          <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg nav-icon"></i></a></li>
+          <li><a href="./account.html"><i class="fa-solid fa-user fa-lg nav-icon"></i></a></li>
+          <li><a class="active" href="./admin.html"><i class="fa-solid fa-toolbox fa-lg nav-icon"></i></a></li>
+        </div>
+      </ul>
+
+      <!--Mobile Navber Menu Icon-->
+      <div class="nav-bar-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </ul>
+    </nav>
+  </header>
+  <!--  end of navigation bar -->
 
-    <!--Mobile Navber Menu Icon-->
-    <div class="nav-bar-container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+  <!-- add product form -->
+  <main>
+    <section class="form-info">
+      <h1>More Cheese Please!</h1>
+      <h4>Fill out the form below to add a product.</h4>
+    </section>
+    <form id="product-form">
+      <label for="name">Product Name:</label>
+      <select id="name" name="name" required>
+        <option value="asiago">Asiago</option>
+        <option value="blue_cheese">Blue Cheese</option>
+        <option value="brie">Brie</option>
+        <option value="cheddar">Cheddar</option>
+        <option value="colby_jack">Colby Jack</option>
+        <option value="swiss">Swiss</option>
+        <option value="gouda">Gouda</option>
+        <option value="monterey_jack">Monterey Jack</option>
+        <option value="pepper_jack">Pepper Jack</option>
+      </select>
+      <label for="price">Product Price:</label>
+      <input id="price" name="price" required type="number">
+      <label for="image">Product Image (SRC):</label>
+      <input id="image" name="image" required type="text">
+      <label for="description">Product Description:</label>
+      <input id="description" name="description" required type="text">
+      <label for="labels">Product Labels:</label>
+      <input id="labels" name="labels" required type="text">
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- footer start -->
+  <footer>
+    <div class="row">
+        <div class="col">
+            <h2 class="logo">CheeseCrave</h2>
+            <div class="legal-links">
+                <a href="./termsOfUse.html" target="_blank">Terms of Use</a>
+                <p> | </p>
+                <a href="./refundPolicy.html" target="_blank">Refund Policy</a> 
+            </div>
+            <p class="fine-print">&copy; CheeseCrave 2023. All rights reserved. Unauthorized use, reproduction, or distribution of the materials on this website is strictly prohibited without prior written permission from CheeseCrave. For inquiries, contact info@cheesecrave.com.</p>    
+        </div>
+        <div class="col">
+            <a class="products-link" href="./product.html">View Products</a>
+            <a class="cart-link" href="./cart.html">Shopping Cart</a>
+            <a class="home-link" href="./recipes.html">Crave Recipes</a>
+            <div class="payment-methods">
+                <img src="../resources/images/paymentCardsImgs/Visa-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/MasterCard-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/AmericanExpress-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/Discover-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/DinersClub-card-light.png" alt="">
+                <img src="../resources/images/paymentCardsImgs/Paypal-card-light.png" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <a class="create-acc-link" href="./account.html">Create Your Account!</a>
+            <a class="signin-link" href="./account.html">Sign in</a>
+            <a class="about-link" href="./about.html">About CheeseCrave</a>
+            <div class="social-links">
+                <i class="fa fa-facebook-square" aria-hiden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            </div>  
+        </div>
+        <div class="col">
+            <h4>Contact</h4>
+            <p>1-88-CRAVE</p>
+            <p>(1-882-7289)</p>
+            <p>MON - FRI 9AM - 6PM PST</p>
+            <a href="mailto:info@cheesecrave.com">info@cheesecrave.com</a>
+            <h4>Location</h4>
+            <p>11345 Swiss Lane</p>
+            <p>Cyprus Valley, CA 92111</p>
+        </div>
+        <div class="col">
+            <h4>Subscribe!</h4>
+            <p>Get access to deals, gifts, and more.</p>
+            <form>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" placeholder="joinus@cheesecrave.com" required>
+                <button type="submit"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+            </form>
+        </div>
     </div>
-  </nav>
-</header>
-<!--  end of navigation bar -->
-
-<!-- add product form -->
-<main>
-  <section class="form-info">
-    <h1>More Cheese Please!</h1>
-    <h4>Fill out the form below to add a product.</h4>
-  </section>
-  <form id="product-form">
-    <label for="name">Product Name:</label>
-    <select id="name" name="name" required>
-      <option value="asiago">Asiago</option>
-      <option value="blue_cheese">Blue Cheese</option>
-      <option value="brie">Brie</option>
-      <option value="cheddar">Cheddar</option>
-      <option value="colby_jack">Colby Jack</option>
-      <option value="swiss">Swiss</option>
-      <option value="gouda">Gouda</option>
-      <option value="monterey_jack">Monterey Jack</option>
-      <option value="pepper_jack">Pepper Jack</option>
-    </select>
-    <label for="price">Product Price:</label>
-    <input id="price" name="price" required type="number">
-    <label for="image">Product Image (SRC):</label>
-    <input id="image" name="image" required type="text">
-    <label for="description">Product Description:</label>
-    <input id="description" name="description" required type="text">
-    <label for="labels">Product Labels:</label>
-    <input id="labels" name="labels" required type="text">
-    <button type="submit">Submit</button>
-  </form>
-</main>
-
-<!-- footer section -->
-<footer>
-  <a class="create-acc-link" href="./account.html">Create Your Account!</a>
-  <a class="signin-link" href="./account.html">Sign in</a>
-  <a class="home-link" href="./recipes.html">Crave Recipes</a>
-  <a class="about-link" href="./about.html">About</a>
-  <a class="products-link" href="./product.html">View Products</a>
-  <a class="cart-link" href="./cart.html">Shopping Cart</a>
-  <a href="../index.html" class="footer-logo">CheeseCrave</a> 
-  <p class="copyright">&copy; CheeseCrave 2023. All rights reserved.</p>
-</footer>
-<!-- end footer section -->
+  </footer>
+  <!-- footer end -->
 </body>
-
 </html>
