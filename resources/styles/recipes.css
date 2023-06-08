@@ -2,16 +2,18 @@ h4, h5, h7 {
   text-align: center;
 }
 
+
 .ingredients, .directions {
   text-align: left;
 }
+
 
 .recipe-heading {
   color: #A53429;
 }
 
+
 .recipe-container {
-<<<<<<< HEAD
   display: flex;
 }
 
@@ -40,6 +42,15 @@ h4, h5, h7 {
 }
 
 .swiss-mac, .colby-jack, .blue-cheese {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+.swiss-mac, .colby-jack, .blue-cheese,  .brie, .feta, .asiago {
   max-width: 250px;
   height: auto;
   border-radius: 50%;
@@ -99,7 +110,6 @@ h4, h5, h7 {
 .feta{
   max-width: 250px;
   border-radius: 50%;
-=======
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -120,6 +130,4 @@ h4, h5, h7 {
   border-radius: 8px;
   background-color:  olive;
   border: 2px solid #800020;
-
->>>>>>> 55768e20bfad1f241e320be9a3cd6b0c766c738a
 }
