@@ -29,6 +29,12 @@
 
   <!--  JavaScript Files-->
   <script src="./js/navbar.js" defer></script>
+  <script src="../js/Products.js" defer></script>
+  <script src="../js/productCard.js" defer></script>
+  <script src="../js/addToCart.js" defer></script>
+  <script src="../js/formFlip.js" defer></script>
+  <script src="../js/itemsController.js" defer></script>
+  <script src="../js/localStorage.js" defer></script>
 </head>
 
 <body>
@@ -59,16 +65,16 @@
   <!-- main section -->
   <main>
     <h2>Your Cart</h2>
-    <table>
+    <!--<table>
       <thead>
       <tr>
-        <th colspan="2">Product</th>
+        <th>Product</th>
         <th>Quantity</th>
         <th>Price</th>
       </tr>
       </thead>
       <tbody id="inCart">
-      <!--  addToCart.js   -->
+       addToCart.js   
       </tbody>
       <tfoot>
       <tr>
@@ -76,7 +82,7 @@
         <td id="total">0.00</td>
       </tr>
       </tfoot>
-    </table>
+    </table> -->
     <!-- <aside>-->
     <!-- <article>
       <h4>Checkout</h4>
@@ -88,6 +94,43 @@
       &lt;!&ndash; total cost w/shipping &ndash;&gt;
     </article> -->
     <!--    </aside> -->
+
+    <!-- <h2>Your Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="inCart">
+           addToCart.js 
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Order Total:</td>
+          <td>$$$</td>
+        </tr>
+      </tfoot>
+    </table> -->
+
+  <table>
+    <thead>
+      <tr>
+        <th>Items</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody id="cartItems">
+      <!-- JavaScript will inject rows here -->
+    </tbody>
+  </table>
+    
+    
   </main>
 
 

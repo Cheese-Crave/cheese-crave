@@ -17,6 +17,7 @@ button:hover {
 i {
     cursor: pointer;
     font-size: 1.5rem;
+    vertical-align: middle;
     color: var(--cream-beige);
 }
 

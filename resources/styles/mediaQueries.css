@@ -7,33 +7,7 @@
 
 
 /* Media Queries for ALL Home Page Styling between 320px to 414px - mobile application */
-@media(max-width: 90em) {
-    .landing-page h2 {
-         font-size: 2rem;
-     } 
- }
- 
- @media(min-width: 37em) {
-     main {
-         width: 95%;
-     }
-}
 
-@media(max-width: 93em) {
-    .intro-section {
-        width: 70%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "info-area";
-    }
-    .brie-img, .mozz-img {
-        display: none;
-    }
-    .info-area {
-        max-width: 800px;
-    }
-}
 
 
 /* Media Queries for Nav and Footer - mobile application */

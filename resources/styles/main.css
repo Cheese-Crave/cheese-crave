@@ -2,7 +2,8 @@
 
 main { /* applies to all main tags on every page*/
   width: 90%;
-  margin: 6rem 0;
+  min-height: 400px;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,56 +68,68 @@ main { /* applies to all main tags on every page*/
 }
 
 /* Home page text section*/
-.intro-section {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "brie-img info-area mozz-img";
-    margin-top: 5rem;
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
+.featured-collections {
+  display: grid;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  width: 95%;
 }
 
-.brie-img, .mozz-img {
-    max-width: 450px;
-    border-radius: 2rem;
+.featured-collections h2 {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  font-size: 2rem;
+  justify-self: start;
 }
 
-.brie-img {
-    grid-area: brie-img;
+.collection-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  overflow: hidden;
+  grid-row: 2;
 }
 
-.mozz-img {
-    grid-area: mozz-img;
+.collection-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-area {
-    padding: 1.5rem;
-    max-width: 700px;
-    text-align: center;
-    border-radius: 2rem;
-    grid-area: info-area;
-    border: 3px solid var(--burgundy);
-    background-color: var(--cream-beige);
+.collection-img:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.info-area h3 {
-  font-size: 1.4em; 
+.collection-link {
+  grid-row: 3;
+  
 }
 
-.info-area h4 {
-    padding: 2em 0; 
-    font-size: 1.3em;
+.collection-link a {
+  font-size: 1.5em;
+  color: var(--black);
 }
 
-.info-area button {
-    font-size: 1.25rem;
+.collection-link i {
+  margin-left: 0.5em;
+  vertical-align: middle;
 }
 
-.call-to-action {
-    font-size: 1.5em;
+.collection-link:hover a {
+  background-color: var(--olive-green);
+  padding: 0.5em;
+  border: 0;
+  color: var(--burgundy);
+  transition: 400ms;
+  border-radius: 0;
+  cursor: pointer;
+  border-radius: 2em;
 }
 
 /* Refund policy and terms of use pages styling */
